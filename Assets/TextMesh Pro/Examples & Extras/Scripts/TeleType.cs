@@ -4,8 +4,11 @@ using System.Collections;
 
 namespace TMPro.Examples
 {
+    
     public class TeleType : MonoBehaviour
     {
+
+
         //[Range(0, 100)]
         //public int RevealSpeed = 50;
 
@@ -25,6 +28,7 @@ namespace TMPro.Examples
             m_textMeshPro.alignment = TextAlignmentOptions.Top;
 
 
+
             //if (GetComponentInParent(typeof(Canvas)) as Canvas == null)
             //{
             //    GameObject canvas = new GameObject("Canvas", typeof(Canvas));
@@ -35,10 +39,14 @@ namespace TMPro.Examples
             //    gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(500, 300);
             //    m_textMeshPro.fontSize = 48;
             //}
+
+
         }
+
 
         IEnumerator Start()
         {
+
             // Force and update of the mesh to get valid information.
             m_textMeshPro.ForceMeshUpdate();
 
@@ -70,5 +78,6 @@ namespace TMPro.Examples
 
             //Debug.Log("Done revealing the text.");
         }
+
     }
 }

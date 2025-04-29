@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using System;
@@ -6,6 +6,7 @@ using System;
 
 namespace TMPro
 {
+
     public class TMP_TextEventHandler : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [Serializable]
@@ -84,6 +85,7 @@ namespace TMPro
         private LinkSelectionEvent m_OnLinkSelection = new LinkSelectionEvent();
 
 
+
         private TMP_Text m_TextComponent;
 
         private Camera m_Camera;
@@ -116,6 +118,7 @@ namespace TMPro
                 m_Camera = Camera.main;
             }
         }
+
 
         void LateUpdate()
         {
@@ -189,22 +192,25 @@ namespace TMPro
                     // Get information about the link.
                     TMP_LinkInfo linkInfo = m_TextComponent.textInfo.linkInfo[linkIndex];
 
-                    // Send the event to any listeners.
+                    // Send the event to any listeners. 
                     SendOnLinkSelection(linkInfo.GetLinkID(), linkInfo.GetLinkText(), linkIndex);
                 }
                 #endregion
             }
         }
 
+
         public void OnPointerEnter(PointerEventData eventData)
         {
             //Debug.Log("OnPointerEnter()");
         }
 
+
         public void OnPointerExit(PointerEventData eventData)
         {
             //Debug.Log("OnPointerExit()");
         }
+
 
         private void SendOnCharacterSelection(char character, int characterIndex)
         {
@@ -235,5 +241,6 @@ namespace TMPro
             if (onLinkSelection != null)
                 onLinkSelection.Invoke(linkID, linkText, linkIndex);
         }
+
     }
 }

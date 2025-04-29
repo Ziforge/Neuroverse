@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
@@ -6,6 +6,7 @@ using TMPro;
 
 namespace TMPro.Examples
 {
+
     public class TMP_ExampleScript_01 : MonoBehaviour
     {
         public enum objectType { TextMeshPro = 0, TextMeshProUGUI = 1 };
@@ -24,7 +25,7 @@ namespace TMPro.Examples
         void Awake()
         {
             // Get a reference to the TMP text component if one already exists otherwise add one.
-            // This example show the convenience of having both TMP components derive from TMP_Text.
+            // This example show the convenience of having both TMP components derive from TMP_Text. 
             if (ObjectType == 0)
                 m_text = GetComponent<TextMeshPro>() ?? gameObject.AddComponent<TextMeshPro>();
             else
@@ -49,6 +50,7 @@ namespace TMPro.Examples
             m_text.rectTransform.sizeDelta = new Vector2(size.x, size.y);
         }
 
+
         void Update()
         {
             if (!isStatic)
@@ -57,5 +59,6 @@ namespace TMPro.Examples
                 count += 1;
             }
         }
+
     }
 }

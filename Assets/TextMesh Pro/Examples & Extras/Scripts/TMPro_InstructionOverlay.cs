@@ -1,11 +1,13 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 
 namespace TMPro.Examples
 {
+    
     public class TMPro_InstructionOverlay : MonoBehaviour
     {
+
         public enum FpsCounterAnchorPositions { TopLeft, BottomLeft, TopRight, BottomRight };
 
         public FpsCounterAnchorPositions AnchorPosition = FpsCounterAnchorPositions.BottomLeft;
@@ -45,10 +47,15 @@ namespace TMPro.Examples
             //last_AnchorPosition = AnchorPosition;
 
             m_TextMeshPro.text = instructions;
+
         }
+
+
+
 
         void Set_FrameCounter_Position(FpsCounterAnchorPositions anchor_position)
         {
+
             switch (anchor_position)
             {
                 case FpsCounterAnchorPositions.TopLeft:

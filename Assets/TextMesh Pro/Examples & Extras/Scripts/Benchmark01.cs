@@ -4,8 +4,10 @@ using System.Collections;
 
 namespace TMPro.Examples
 {
+    
     public class Benchmark01 : MonoBehaviour
     {
+
         public int BenchmarkType = 0;
 
         public TMP_FontAsset TMProFont;
@@ -25,8 +27,12 @@ namespace TMPro.Examples
         private Material m_material02;
 
 
+
         IEnumerator Start()
         {
+
+
+
             if (BenchmarkType == 0) // TextMesh Pro Component
             {
                 m_textMeshPro = gameObject.AddComponent<TextMeshPro>();
@@ -48,13 +54,15 @@ namespace TMPro.Examples
                 //m_textMeshPro.fontSharedMaterial.SetFloat("_OutlineWidth", 0.2f);
                 //m_textMeshPro.fontSharedMaterial.EnableKeyword("UNDERLAY_ON");
                 //m_textMeshPro.lineJustification = LineJustificationTypes.Center;
-                m_textMeshPro.enableWordWrapping = false;
-                //m_textMeshPro.lineLength = 60;
+                m_textMeshPro.enableWordWrapping = false;    
+                //m_textMeshPro.lineLength = 60;          
                 //m_textMeshPro.characterSpacing = 0.2f;
                 //m_textMeshPro.fontColor = new Color32(255, 255, 255, 255);
 
                 m_material01 = m_textMeshPro.font.material;
-                m_material02 = Resources.Load<Material>("Fonts & Materials/LiberationSans SDF - Drop Shadow"); // Make sure the LiberationSans SDF exists before calling this...
+                m_material02 = Resources.Load<Material>("Fonts & Materials/LiberationSans SDF - Drop Shadow"); // Make sure the LiberationSans SDF exists before calling this...  
+
+
             }
             else if (BenchmarkType == 1) // TextMesh
             {
@@ -78,6 +86,7 @@ namespace TMPro.Examples
             }
 
 
+
             for (int i = 0; i <= 1000000; i++)
             {
                 if (BenchmarkType == 0)
@@ -85,6 +94,9 @@ namespace TMPro.Examples
                     m_textMeshPro.SetText(label01, i % 1000);
                     if (i % 1000 == 999)
                         m_textMeshPro.fontSharedMaterial = m_textMeshPro.fontSharedMaterial == m_material01 ? m_textMeshPro.fontSharedMaterial = m_material02 : m_textMeshPro.fontSharedMaterial = m_material01;
+
+
+
                 }
                 else if (BenchmarkType == 1)
                     m_textMesh.text = label02 + (i % 1000).ToString();
@@ -95,6 +107,7 @@ namespace TMPro.Examples
 
             yield return null;
         }
+
 
         /*
         void Update()
