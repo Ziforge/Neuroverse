@@ -20,7 +20,7 @@ public class VisualSettings : MonoBehaviour
 
         RefreshSlider(_value);
         //darkness slider here based off of -->* masterMixer.SetFloat("MasterVolume", Mathf.Log10(_value / 100) * 20f);   
-        darkOverlayG.SetZoneDarkness(_value / 100f);
+        //darkOverlayG.SetZoneDarkness(_value / 100f);
     }
 
     public void SetValFromSlider() {
