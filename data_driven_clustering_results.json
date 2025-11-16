@@ -1,0 +1,79 @@
+{
+  "method": "Truly Data-Driven Clustering",
+  "optimal_k": 6,
+  "metrics_used": [
+    "Silhouette Score",
+    "Calinski-Harabasz Index",
+    "BIC",
+    "AIC"
+  ],
+  "cluster_centers": {
+    "0": {
+      "volume": 57.089246804512584,
+      "muting": 0.35114973560351537,
+      "delay": 68.007775,
+      "saturation": 28.101824999999998,
+      "n_members": 6
+    },
+    "1": {
+      "volume": 78.78597233660336,
+      "muting": 0.6236320820621957,
+      "delay": 0.0,
+      "saturation": 0.0,
+      "n_members": 3
+    },
+    "2": {
+      "volume": 31.503857587136512,
+      "muting": 0.9107587894048013,
+      "delay": 27.660515000000004,
+      "saturation": 0.0,
+      "n_members": 2
+    },
+    "3": {
+      "volume": 86.89846409722223,
+      "muting": 0.2331481003568658,
+      "delay": 28.654654999999998,
+      "saturation": 64.961415,
+      "n_members": 2
+    },
+    "4": {
+      "volume": 37.135279290655006,
+      "muting": 0.5875558381446594,
+      "delay": 62.40317,
+      "saturation": 68.017885,
+      "n_members": 2
+    },
+    "5": {
+      "volume": 52.01771156749016,
+      "muting": 0.3040919515730991,
+      "delay": 4.560616666666668,
+      "saturation": 4.494756666666664,
+      "n_members": 3
+    }
+  },
+  "participant_assignments": {
+    "PARTICIPANT10": 4,
+    "PARTICIPANT101": 5,
+    "PARTICIPANT103": 2,
+    "PARTICIPANT104": 1,
+    "PARTICIPANT105": 4,
+    "PARTICIPANT106": 5,
+    "PARTICIPANT11": 0,
+    "PARTICIPANT13": 5,
+    "PARTICIPANT14": 1,
+    "PARTICIPANT15": 3,
+    "PARTICIPANT2_GETRIDOFMULTIMUTES_": 0,
+    "PARTICIPANT3_MINORMUTEISSUES": 0,
+    "PARTICIPANT4": 0,
+    "PARTICIPANT5": 3,
+    "PARTICIPANT6": 0,
+    "PARTICIPANT7": 0,
+    "PARTICIPANT8": 2,
+    "PARTICIPANT9": 1
+  },
+  "validation": {
+    "silhouette_score": 0.35697696502553267,
+    "calinski_harabasz": 10.16766409114533
+  },
+  "agreement_with_previous": 0.8333333333333334
+}

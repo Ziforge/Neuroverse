@@ -1,0 +1,307 @@
+{
+  "classification_counts": {
+    "Hypersensitive": 3,
+    "Hyposensitive": 10,
+    "Typical": 7
+  },
+  "volume_by_class": {
+    "Hypersensitive": [
+      68.6981742962963,
+      42.619136074013156,
+      51.63850328112449
+    ],
+    "Hyposensitive": [
+      60.09922706263499,
+      60.47947573426573,
+      63.74561098997669,
+      0,
+      60.29742219061166,
+      72.74908795857988,
+      62.224069285714286,
+      45.353944196923074,
+      66.41450797799114,
+      41.32588873258427
+    ],
+    "Typical": [
+      76.83632588299025,
+      47.828325480519474,
+      47.7047336659919,
+      71.52123700365408,
+      52.28572211111111,
+      70.51226083333334,
+      49.950164608801956
+    ]
+  },
+  "mutes_by_class": {
+    "Hypersensitive": [
+      12,
+      3,
+      4
+    ],
+    "Hyposensitive": [
+      6,
+      9,
+      9,
+      14,
+      5,
+      10,
+      3,
+      4,
+      4,
+      9
+    ],
+    "Typical": [
+      11,
+      8,
+      8,
+      4,
+      3,
+      6,
+      6
+    ]
+  },
+  "adj_rate_by_class": {
+    "Hypersensitive": [
+      13.798977853492334,
+      70.15384615384616,
+      33.800904977375566
+    ],
+    "Hyposensitive": [
+      38.42323651452282,
+      12.067510548523208,
+      37.19653179190752,
+      0.0,
+      28.48075624577988,
+      26.68421052631579,
+      1.0011918951132301,
+      8.873720136518772,
+      51.81122448979592,
+      61.73410404624277
+    ],
+    "Typical": [
+      45.20816326530612,
+      32.58110014104373,
+      20.357142857142858,
+      37.6893649579189,
+      30.20979020979021,
+      12.857142857142856,
+      28.142201834862387
+    ]
+  },
+  "confidence_distribution": [
+    {
+      "id": "participant10",
+      "class": "Hyposensitive",
+      "confidence": 0.4397590361445783
+    },
+    {
+      "id": "participant101",
+      "class": "Hyposensitive",
+      "confidence": 0.6050955414012739
+    },
+    {
+      "id": "participant102",
+      "class": "Hypersensitive",
+      "confidence": 0.559322033898305
+    },
+    {
+      "id": "participant103",
+      "class": "Hyposensitive",
+      "confidence": 0.6377952755905512
+    },
+    {
+      "id": "participant104",
+      "class": "Typical",
+      "confidence": 0.5093167701863354
+    },
+    {
+      "id": "participant105",
+      "class": "Typical",
+      "confidence": 0.5369127516778524
+    },
+    {
+      "id": "participant106",
+      "class": "Typical",
+      "confidence": 0.39285714285714285
+    },
+    {
+      "id": "participant11",
+      "class": "Hypersensitive",
+      "confidence": 0.5
+    },
+    {
+      "id": "participant12",
+      "class": "Hyposensitive",
+      "confidence": 0.6197183098591549
+    },
+    {
+      "id": "participant13",
+      "class": "Hyposensitive",
+      "confidence": 0.5283018867924528
+    },
+    {
+      "id": "participant14",
+      "class": "Hyposensitive",
+      "confidence": 0.49122807017543857
+    },
+    {
+      "id": "participant15",
+      "class": "Hyposensitive",
+      "confidence": 0.6690647482014388
+    },
+    {
+      "id": "participant2_getRidOfMultiMutes_",
+      "class": "Typical",
+      "confidence": 0.5174825174825175
+    },
+    {
+      "id": "participant3_minorMuteIssues",
+      "class": "Hyposensitive",
+      "confidence": 0.5231788079470199
+    },
+    {
+      "id": "participant4",
+      "class": "Hyposensitive",
+      "confidence": 0.5033557046979866
+    },
+    {
+      "id": "participant5",
+      "class": "Typical",
+      "confidence": 0.5826771653543307
+    },
+    {
+      "id": "participant6",
+      "class": "Typical",
+      "confidence": 0.4171779141104294
+    },
+    {
+      "id": "participant7",
+      "class": "Typical",
+      "confidence": 0.46357615894039733
+    },
+    {
+      "id": "participant8",
+      "class": "Hyposensitive",
+      "confidence": 0.6205128205128205
+    },
+    {
+      "id": "participant9",
+      "class": "Hypersensitive",
+      "confidence": 0.5240963855421686
+    }
+  ],
+  "questionnaire_patterns": {
+    "sound_env": {
+      "Hyposensitive_2": 7,
+      "Typical_2": 6,
+      "Typical_1": 1,
+      "Hypersensitive_1": 1,
+      "Hyposensitive_3": 2,
+      "Hyposensitive_1": 1,
+      "Hypersensitive_2": 1
+    },
+    "sound_texture": {
+      "Hyposensitive_1": 6,
+      "Hyposensitive_3": 1,
+      "Typical_2": 6,
+      "Hypersensitive_1": 2,
+      "Hyposensitive_2": 3,
+      "Typical_1": 1
+    },
+    "saturation": {
+      "Hyposensitive_3": 8,
+      "Hyposensitive_4": 1,
+      "Typical_2": 3,
+      "Typical_3": 4,
+      "Hypersensitive_1": 2,
+      "Hyposensitive_2": 1
+    },
+    "delay": {
+      "Hyposensitive_2": 5,
+      "Typical_2": 5,
+      "Typical_3": 1,
+      "Typical_1": 1,
+      "Hypersensitive_3": 1,
+      "Hyposensitive_3": 5,
+      "Hypersensitive_1": 1
+    },
+    "reverb": {
+      "Hyposensitive_3": 9,
+      "Typical_2": 5,
+      "Typical_3": 2,
+      "Hypersensitive_3": 1,
+      "Hypersensitive_2": 1
+    },
+    "pitch_shift": {
+      "Hyposensitive_2": 2,
+      "Hyposensitive_3": 1,
+      "Hyposensitive_4": 1,
+      "Typical_1": 2,
+      "Typical_2": 5,
+      "Hypersensitive_1": 2,
+      "Hyposensitive_1": 5
+    }
+  },
+  "sound_wheel_scales": {
+    "Hypersensitive": {
+      "Loudness": 7,
+      "Attack": 3,
+      "Bass_Precision": 5,
+      "Punch": 2,
+      "Treble_Strength": 3,
+      "Brilliance": 3,
+      "Bass_Strength": 5,
+      "Bass_Depth": 3,
+      "Timbral_Balance": 2,
+      "Depth": 3,
+      "Width": 3,
+      "Envelopment": 3,
+      "Reverberance": 2,
+      "Clarity": 7,
+      "Presence": 3,
+      "Detail": 3,
+      "Distortion": 2,
+      "Compression": 8
+    },
+    "Hyposensitive": {
+      "Loudness": 7,
+      "Attack": 8,
+      "Bass_Precision": 8,
+      "Punch": 8,
+      "Treble_Strength": 8,
+      "Brilliance": 8,
+      "Bass_Strength": 8,
+      "Bass_Depth": 8,
+      "Timbral_Balance": 8,
+      "Depth": 8,
+      "Width": 8,
+      "Envelopment": 8,
+      "Reverberance": 8,
+      "Clarity": 7,
+      "Presence": 8,
+      "Detail": 8,
+      "Distortion": 5,
+      "Compression": 2
+    },
+    "Typical": {
+      "Loudness": 9,
+      "Attack": 5,
+      "Bass_Precision": 5,
+      "Punch": 5,
+      "Treble_Strength": 5,
+      "Brilliance": 5,
+      "Bass_Strength": 5,
+      "Bass_Depth": 5,
+      "Timbral_Balance": 5,
+      "Depth": 5,
+      "Width": 5,
+      "Envelopment": 5,
+      "Reverberance": 5,
+      "Clarity": 7,
+      "Presence": 5,
+      "Detail": 5,
+      "Distortion": 3,
+      "Compression": 5
+    }
+  }
+}

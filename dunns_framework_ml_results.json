@@ -1,0 +1,161 @@
+{
+  "dunn_mapping": [
+    {
+      "id": "PARTICIPANT10",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": -1,
+      "response_score": 1
+    },
+    {
+      "id": "PARTICIPANT101",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Sensory Sensitive",
+      "threshold_score": -3,
+      "response_score": 0
+    },
+    {
+      "id": "PARTICIPANT103",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Sensory Avoiding",
+      "threshold_score": -4,
+      "response_score": 1
+    },
+    {
+      "id": "PARTICIPANT104",
+      "behavioral_class": "typical",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": 0,
+      "response_score": 1
+    },
+    {
+      "id": "PARTICIPANT105",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Sensory Avoiding",
+      "threshold_score": -2,
+      "response_score": 2
+    },
+    {
+      "id": "PARTICIPANT106",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Sensory Sensitive",
+      "threshold_score": -3,
+      "response_score": 0
+    },
+    {
+      "id": "PARTICIPANT11",
+      "behavioral_class": "typical",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": 1,
+      "response_score": 1
+    },
+    {
+      "id": "PARTICIPANT13",
+      "behavioral_class": "typical",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": -1,
+      "response_score": -1
+    },
+    {
+      "id": "PARTICIPANT14",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": 0,
+      "response_score": 1
+    },
+    {
+      "id": "PARTICIPANT15",
+      "behavioral_class": "hypo",
+      "dunn_quadrant": "Low Registration",
+      "threshold_score": 3,
+      "response_score": 0
+    },
+    {
+      "id": "PARTICIPANT2_GETRIDOFMULTIMUTES_",
+      "behavioral_class": "typical",
+      "dunn_quadrant": "Low Registration",
+      "threshold_score": 3,
+      "response_score": 0
+    },
+    {
+      "id": "PARTICIPANT3_MINORMUTEISSUES",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": -1,
+      "response_score": 0
+    },
+    {
+      "id": "PARTICIPANT4",
+      "behavioral_class": "typical",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": 1,
+      "response_score": 1
+    },
+    {
+      "id": "PARTICIPANT5",
+      "behavioral_class": "hypo",
+      "dunn_quadrant": "Low Registration",
+      "threshold_score": 3,
+      "response_score": 0
+    },
+    {
+      "id": "PARTICIPANT6",
+      "behavioral_class": "typical",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": -1,
+      "response_score": 1
+    },
+    {
+      "id": "PARTICIPANT7",
+      "behavioral_class": "typical",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": 1,
+      "response_score": 1
+    },
+    {
+      "id": "PARTICIPANT8",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Sensory Avoiding",
+      "threshold_score": -2,
+      "response_score": 2
+    },
+    {
+      "id": "PARTICIPANT9",
+      "behavioral_class": "hyper",
+      "dunn_quadrant": "Balanced/Typical",
+      "threshold_score": 0,
+      "response_score": 1
+    }
+  ],
+  "bootstrap_ci": {
+    "volume": {
+      "hyper": {
+        "mean": 47.84002986926597,
+        "ci_lower": 37.46057168039879,
+        "ci_upper": 60.13376700231463
+      },
+      "typical": {
+        "mean": 63.30410668221902,
+        "ci_lower": 55.66654798610718,
+        "ci_upper": 71.78136266031869
+      },
+      "hypo": {
+        "mean": 87.4441921276288,
+        "ci_lower": 75.20154819444446,
+        "ci_upper": 98.59538000000002
+      }
+    }
+  },
+  "ml_metrics": {
+    "original_n": 18,
+    "extended_n": 168,
+    "cv_accuracy": 0.7852049910873442,
+    "loo_accuracy": 0.8333333333333334,
+    "feature_importance": {
+      "volume": 0.38206179298033904,
+      "muting": 0.28033089360925045,
+      "delay": 0.09205677329007346,
+      "saturation": 0.245550540120337
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "method": "Literature-Based Neurodivergence Pattern Inference",
+  "n_participants": 18,
+  "pattern_distribution": {
+    "ASD_Hypersensitive": 10,
+    "Neurotypical": 5,
+    "ADHD_Seeking": 3
+  },
+  "individual_patterns": [
+    {
+      "id": "PARTICIPANT10",
+      "behavioral_class": "hyper",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 50.0,
+      "all_scores": {
+        "ASD_Hypersensitive": 5,
+        "ADHD_Seeking": 3,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 0,
+        "Neurotypical": 0
+      }
+    },
+    {
+      "id": "PARTICIPANT101",
+      "behavioral_class": "hyper",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 53.333333333333336,
+      "all_scores": {
+        "ASD_Hypersensitive": 8,
+        "ADHD_Seeking": 0,
+        "ADHD_Inattentive": 3,
+        "SPD_Modulation": 2,
+        "Neurotypical": 2
+      }
+    },
+    {
+      "id": "PARTICIPANT103",
+      "behavioral_class": "hyper",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 83.33333333333334,
+      "all_scores": {
+        "ASD_Hypersensitive": 10,
+        "ADHD_Seeking": 0,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 0,
+        "Neurotypical": 0
+      }
+    },
+    {
+      "id": "PARTICIPANT104",
+      "behavioral_class": "hypo",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 41.66666666666667,
+      "all_scores": {
+        "ASD_Hypersensitive": 5,
+        "ADHD_Seeking": 5,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 0,
+        "Neurotypical": 0
+      }
+    },
+    {
+      "id": "PARTICIPANT105",
+      "behavioral_class": "hyper",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 53.84615384615385,
+      "all_scores": {
+        "ASD_Hypersensitive": 7,
+        "ADHD_Seeking": 2,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 2,
+        "Neurotypical": 0
+      }
+    },
+    {
+      "id": "PARTICIPANT106",
+      "behavioral_class": "hyper",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 66.66666666666666,
+      "all_scores": {
+        "ASD_Hypersensitive": 8,
+        "ADHD_Seeking": 0,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 0,
+        "Neurotypical": 2
+      }
+    },
+    {
+      "id": "PARTICIPANT11",
+      "behavioral_class": "typical",
+      "primary_pattern": "Neurotypical",
+      "confidence": 53.84615384615385,
+      "all_scores": {
+        "ASD_Hypersensitive": 2,
+        "ADHD_Seeking": 1,
+        "ADHD_Inattentive": 3,
+        "SPD_Modulation": 0,
+        "Neurotypical": 7
+      }
+    },
+    {
+      "id": "PARTICIPANT13",
+      "behavioral_class": "typical",
+      "primary_pattern": "Neurotypical",
+      "confidence": 55.55555555555556,
+      "all_scores": {
+        "ASD_Hypersensitive": 3,
+        "ADHD_Seeking": 1,
+        "ADHD_Inattentive": 0,
+        "SPD_Modulation": 0,
+        "Neurotypical": 5
+      }
+    },
+    {
+      "id": "PARTICIPANT14",
+      "behavioral_class": "hyper",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 43.75,
+      "all_scores": {
+        "ASD_Hypersensitive": 7,
+        "ADHD_Seeking": 3,
+        "ADHD_Inattentive": 0,
+        "SPD_Modulation": 3,
+        "Neurotypical": 3
+      }
+    },
+    {
+      "id": "PARTICIPANT15",
+      "behavioral_class": "hypo",
+      "primary_pattern": "ADHD_Seeking",
+      "confidence": 72.72727272727273,
+      "all_scores": {
+        "ASD_Hypersensitive": 0,
+        "ADHD_Seeking": 8,
+        "ADHD_Inattentive": 0,
+        "SPD_Modulation": 0,
+        "Neurotypical": 3
+      }
+    },
+    {
+      "id": "PARTICIPANT2_GETRIDOFMULTIMUTES_",
+      "behavioral_class": "hypo",
+      "primary_pattern": "ADHD_Seeking",
+      "confidence": 77.77777777777779,
+      "all_scores": {
+        "ASD_Hypersensitive": 0,
+        "ADHD_Seeking": 7,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 0,
+        "Neurotypical": 0
+      }
+    },
+    {
+      "id": "PARTICIPANT3_MINORMUTEISSUES",
+      "behavioral_class": "hyper",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 46.666666666666664,
+      "all_scores": {
+        "ASD_Hypersensitive": 7,
+        "ADHD_Seeking": 2,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 2,
+        "Neurotypical": 2
+      }
+    },
+    {
+      "id": "PARTICIPANT4",
+      "behavioral_class": "typical",
+      "primary_pattern": "Neurotypical",
+      "confidence": 71.42857142857143,
+      "all_scores": {
+        "ASD_Hypersensitive": 0,
+        "ADHD_Seeking": 3,
+        "ADHD_Inattentive": 1,
+        "SPD_Modulation": 0,
+        "Neurotypical": 10
+      }
+    },
+    {
+      "id": "PARTICIPANT5",
+      "behavioral_class": "hypo",
+      "primary_pattern": "ADHD_Seeking",
+      "confidence": 61.53846153846154,
+      "all_scores": {
+        "ASD_Hypersensitive": 1,
+        "ADHD_Seeking": 8,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 0,
+        "Neurotypical": 2
+      }
+    },
+    {
+      "id": "PARTICIPANT6",
+      "behavioral_class": "typical",
+      "primary_pattern": "Neurotypical",
+      "confidence": 41.66666666666667,
+      "all_scores": {
+        "ASD_Hypersensitive": 4,
+        "ADHD_Seeking": 0,
+        "ADHD_Inattentive": 3,
+        "SPD_Modulation": 0,
+        "Neurotypical": 5
+      }
+    },
+    {
+      "id": "PARTICIPANT7",
+      "behavioral_class": "typical",
+      "primary_pattern": "Neurotypical",
+      "confidence": 63.63636363636363,
+      "all_scores": {
+        "ASD_Hypersensitive": 0,
+        "ADHD_Seeking": 1,
+        "ADHD_Inattentive": 3,
+        "SPD_Modulation": 0,
+        "Neurotypical": 7
+      }
+    },
+    {
+      "id": "PARTICIPANT8",
+      "behavioral_class": "hyper",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 64.28571428571429,
+      "all_scores": {
+        "ASD_Hypersensitive": 9,
+        "ADHD_Seeking": 1,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 2,
+        "Neurotypical": 0
+      }
+    },
+    {
+      "id": "PARTICIPANT9",
+      "behavioral_class": "hypo",
+      "primary_pattern": "ASD_Hypersensitive",
+      "confidence": 35.714285714285715,
+      "all_scores": {
+        "ASD_Hypersensitive": 5,
+        "ADHD_Seeking": 5,
+        "ADHD_Inattentive": 2,
+        "SPD_Modulation": 2,
+        "Neurotypical": 0
+      }
+    }
+  ],
+  "synthetic_population": {
+    "n": 100,
+    "pattern_distribution": {
+      "ADHD_Inattentive": 17,
+      "SPD_Modulation": 15,
+      "ASD_Hypersensitive": 36,
+      "Neurotypical": 22,
+      "ADHD_Seeking": 10
+    },
+    "behavioral_distribution": {
+      "hyper": 46,
+      "typical": 38,
+      "hypo": 16
+    }
+  }
+}

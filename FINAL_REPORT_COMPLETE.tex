@@ -1,0 +1,392 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Implicit Sensory Processing Assessment via VR Behavioral Analysis: \\ A Pilot Study and Methodological Framework}
+\author{Neuroverse Research Project}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This pilot study investigates the feasibility of using implicit behavioral metrics from virtual reality (VR) auditory interactions to identify sensory processing patterns. Analysis of 18 participants' VR interaction logs revealed six statistically distinct behavioral phenotypes through unsupervised clustering, challenging the conventional three-category model (hypersensitive/typical/hyposensitive). Machine learning augmentation expanded the dataset to n=600, achieving 98.8\% classification accuracy. However, the small sample size and convenience sampling from a Sound and Music Computing program limit generalizability. This work establishes a methodological framework and preliminary phenotype hypotheses requiring validation with standardized sensory assessments and clinical populations. The study serves as proof-of-concept for implicit behavioral measurement rather than definitive sensory profile classification.
+\end{abstract}
+
+\section{Introduction}
+
+\subsection{Research Context}
+
+Sensory processing differences are increasingly recognized as core features of neurodevelopmental conditions including Autism Spectrum Disorder (ASD), Attention-Deficit/Hyperactivity Disorder (ADHD), and Sensory Processing Disorder (SPD). Traditional assessment relies on self-report questionnaires (e.g., Dunn's Adult Sensory Profile), which may suffer from introspective limitations and social desirability bias.
+
+Virtual reality offers potential for implicit behavioral assessment---measuring what participants \textit{actually do} rather than what they \textit{report} doing. This pilot study explores whether VR auditory interaction patterns can serve as proxies for underlying sensory processing characteristics.
+
+\subsection{Objectives}
+
+\begin{enumerate}
+    \item Demonstrate technical feasibility of extracting sensory processing indicators from VR behavioral logs
+    \item Identify preliminary behavioral phenotypes using unsupervised machine learning
+    \item Establish methodology and sample size requirements for validation study
+    \item Critically assess limitations and generalizability constraints
+\end{enumerate}
+
+\section{Methodology}
+
+\subsection{Participants and Setting}
+
+Eighteen participants (N=18) were recruited from a Sound and Music Computing graduate program. This represents a convenience sample with known limitations:
+
+\begin{itemize}
+    \item Not representative of general population
+    \item Likely self-selection bias toward auditory-focused individuals
+    \item No pre-screening for neurodivergence
+    \item Demographics: Graduate-level education, technical/musical background
+\end{itemize}
+
+\subsection{VR Auditory Interaction Protocol}
+
+Each participant completed a 15-minute VR session with control over four auditory parameters:
+
+\begin{itemize}
+    \item \textbf{Volume}: Overall loudness (0-100\%)
+    \item \textbf{Muting}: Ability to temporarily silence audio
+    \item \textbf{Delay}: Spatial reverberation/echo effect (0-100\%)
+    \item \textbf{Saturation}: Harmonic distortion/warmth (0-100\%)
+\end{itemize}
+
+All parameter adjustments were logged with timestamps, enabling temporal analysis. Session durations ranged from 8.7 to 24.7 minutes.
+
+\subsection{Feature Extraction}
+
+For each participant, four behavioral features were computed:
+
+\begin{enumerate}
+    \item \textbf{Settled Volume}: Mean volume during final 20\% of session (stable preference after exploration)
+    \item \textbf{Muting Rate}: Mute events per minute (normalized for session duration)
+    \item \textbf{Final Delay}: Terminal delay parameter value
+    \item \textbf{Final Saturation}: Terminal saturation parameter value
+\end{enumerate}
+
+\subsection{Data-Driven Clustering}
+
+Rather than imposing preselected thresholds, unsupervised K-means clustering was employed. Optimal cluster number was determined by:
+
+\begin{itemize}
+    \item Silhouette Score (cluster cohesion)
+    \item Calinski-Harabasz Index (between/within cluster variance ratio)
+    \item Bayesian Information Criterion (model parsimony)
+    \item Akaike Information Criterion (goodness of fit)
+\end{itemize}
+
+All metrics indicated 5-6 clusters as optimal, with final selection of k=6 based on consensus.
+
+\subsection{Machine Learning Data Augmentation}
+
+To address statistical power limitations of n=18, synthetic data generation was employed:
+
+\begin{enumerate}
+    \item \textbf{Gaussian sampling}: For each cluster, samples drawn from multivariate normal distribution with learned mean and covariance
+    \item \textbf{Constraint enforcement}: Values clipped to physiologically plausible ranges
+    \item \textbf{Balanced generation}: 100 synthetic samples per cluster (n=600 total)
+\end{enumerate}
+
+\textbf{Important caveat}: Augmented data preserves learned patterns but cannot generate information beyond original sample. Claims are limited to classification feasibility, not population-level inference.
+
+\section{Findings}
+
+\subsection{Six Behavioral Phenotypes}
+
+Unsupervised clustering revealed six statistically distinct phenotypes (Table \ref{tab:phenotypes}).
+
+\begin{table}[htbp]
+\centering
+\caption{Six Data-Driven Behavioral Phenotypes}
+\label{tab:phenotypes}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Phenotype} & \textbf{n} & \textbf{\%} & \textbf{Vol\%} & \textbf{Mute/min} & \textbf{Delay\%} & \textbf{Sat\%} \\
+\midrule
+Sensory Avoider & 2 & 11.1 & 31.5 & 0.911 & 27.7 & 0.0 \\
+Selective Processor & 2 & 11.1 & 37.1 & 0.588 & 62.4 & 68.0 \\
+Purist/Natural & 3 & 16.7 & 52.0 & 0.304 & 4.6 & 4.5 \\
+Balanced Explorer & 6 & 33.3 & 57.1 & 0.351 & 68.0 & 28.1 \\
+Fluctuating Seeker & 3 & 16.7 & 78.8 & 0.624 & 0.0 & 0.0 \\
+Sensation Maximizer & 2 & 11.1 & 86.9 & 0.233 & 28.7 & 65.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Statistical Validation}
+
+All six phenotypes showed significant differentiation across all behavioral features:
+
+\begin{itemize}
+    \item Volume: F(5,12) = 10.06, p = 0.0006
+    \item Muting: F(5,12) = 9.09, p = 0.0009
+    \item Delay: F(5,12) = 9.38, p = 0.0008
+    \item Saturation: F(5,12) = 12.74, p = 0.0002
+\end{itemize}
+
+Cluster quality metrics:
+\begin{itemize}
+    \item Silhouette Score: 0.357 (fair cohesion)
+    \item Calinski-Harabasz Index: 10.2
+\end{itemize}
+
+\subsection{Model Comparison}
+
+The six-cluster model outperformed the conventional three-cluster model:
+
+\begin{table}[htbp]
+\centering
+\caption{Model Fit Comparison}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Metric} & \textbf{3-Cluster} & \textbf{6-Cluster} \\
+\midrule
+Silhouette Score & 0.238 & \textbf{0.357} \\
+Calinski-Harabasz & 7.6 & \textbf{10.2} \\
+CV Accuracy (augmented) & 98.4\% & \textbf{98.8\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Feature Importance}
+
+Random Forest classification on augmented data revealed balanced feature importance:
+
+\begin{itemize}
+    \item Volume: 30.4\%
+    \item Saturation: 26.4\%
+    \item Delay: 23.4\%
+    \item Muting: 19.8\%
+\end{itemize}
+
+Unlike the three-cluster model where volume dominated (40.9\%), the six-cluster model distributes discriminative power more evenly across features.
+
+\subsection{Key Observations}
+
+\subsubsection{Volume Does Not Equal Sensitivity}
+
+Contrary to simple hypersensitive/hyposensitive dichotomy:
+
+\begin{itemize}
+    \item \textbf{Selective Processor}: Low volume (37\%) but HIGH saturation (68\%)
+    \item \textbf{Fluctuating Seeker}: High volume (79\%) but HIGH muting rate (0.62/min)
+\end{itemize}
+
+These patterns suggest two orthogonal dimensions: volume tolerance (loudness sensitivity) and processing preference (complexity tolerance).
+
+\subsubsection{Approach-Avoid Patterns}
+
+The Fluctuating Seeker phenotype (high volume + high muting) suggests sensory modulation difficulty---seeking stimulation but frequently retreating. This pattern may correspond to sensory regulation challenges documented in SPD literature.
+
+\subsubsection{Compensatory Strategies}
+
+The Selective Processor phenotype (low volume + high effects) may represent compensatory processing---individuals who reduce loudness but seek specific acoustic manipulations. This warrants investigation for potential cognitive or perceptual compensations.
+
+\section{Critical Limitations}
+
+\subsection{Sample Size Constraints}
+
+With n=18 total and average 3 participants per cluster:
+
+\begin{itemize}
+    \item High risk of overfitting
+    \item Two phenotypes based on only n=2
+    \item Cannot distinguish real structure from sampling artifacts
+    \item Phenotypes are \textbf{preliminary hypotheses}, not established categories
+\end{itemize}
+
+\subsection{Sampling Bias}
+
+The convenience sample from Sound and Music Computing likely exhibits:
+
+\begin{itemize}
+    \item Self-selection bias (auditory-focused individuals)
+    \item Elevated neurodivergent traits (technical domains attract ASD/ADHD profiles)
+    \item Limited demographic diversity
+    \item Not representative of general population
+\end{itemize}
+
+Prevalence estimates cannot be generalized beyond this specific population.
+
+\subsection{No Ground Truth Validation}
+
+\begin{itemize}
+    \item No standardized sensory processing measures administered
+    \item No clinical diagnoses available
+    \item No correlation with established instruments (Dunn's Sensory Profile)
+    \item Phenotypes are data-driven labels, not clinically validated categories
+\end{itemize}
+
+\subsection{Synthetic Data Limitations}
+
+ML augmentation preserves learned patterns but:
+
+\begin{itemize}
+    \item Cannot extrapolate beyond observed behavioral range
+    \item Assumes Gaussian distributions
+    \item High classification accuracy may reflect consistency of generation, not true generalizability
+    \item Amplifies any biases present in original 18 participants
+\end{itemize}
+
+\section{Relation to Existing Frameworks}
+
+\subsection{Dunn's Sensory Processing Framework}
+
+Dunn's (1997) four-quadrant model characterizes sensory processing by neurological threshold (low/high) and behavioral response (passive/active):
+
+\begin{itemize}
+    \item Sensory Avoiding (Low threshold + Active)
+    \item Sensory Sensitive (Low threshold + Passive)
+    \item Sensation Seeking (High threshold + Active)
+    \item Low Registration (High threshold + Passive)
+\end{itemize}
+
+Our phenotypes map partially:
+
+\begin{table}[htbp]
+\centering
+\caption{Phenotype Mapping to Dunn's Framework}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Our Phenotype} & \textbf{Possible Dunn Quadrant} & \textbf{Fit Quality} \\
+\midrule
+Sensory Avoider & Sensory Avoiding & Good \\
+Selective Processor & Unknown & Poor \\
+Purist/Natural & Balanced & Moderate \\
+Balanced Explorer & Balanced & Moderate \\
+Fluctuating Seeker & Sensory Modulation Disorder? & Poor \\
+Sensation Maximizer & Sensation Seeking & Good \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Framework Limitations}
+
+Two phenotypes (Selective Processor, Fluctuating Seeker) do not fit Dunn's quadrants cleanly. Possible explanations:
+
+\begin{enumerate}
+    \item \textbf{Compensatory strategies}: High-functioning individuals develop non-standard approaches
+    \item \textbf{Comorbid presentations}: Co-occurring conditions (ASD + ADHD) produce mixed patterns
+    \item \textbf{Domain-specific differences}: Auditory processing may not follow general sensory patterns
+    \item \textbf{Statistical artifacts}: Small sample size produces spurious clusters
+\end{enumerate}
+
+Distinguishing these possibilities requires validation study with clinical populations.
+
+\section{Future Work: Validation Study Design}
+
+\subsection{Objectives}
+
+\begin{enumerate}
+    \item Determine if six phenotypes replicate in independent sample
+    \item Correlate phenotypes with standardized sensory assessments
+    \item Validate against clinical diagnoses (ASD, ADHD, SPD)
+    \item Establish test-retest reliability
+\end{enumerate}
+
+\subsection{Proposed Sample}
+
+\textbf{Total: n=120 (20 per phenotype)}
+
+Stratified recruitment:
+\begin{itemize}
+    \item 40 clinically diagnosed (ASD, ADHD, SPD mix)
+    \item 40 neurotypical controls (age/gender matched)
+    \item 40 unscreened general population
+\end{itemize}
+
+\subsection{Assessment Protocol}
+
+\begin{enumerate}
+    \item \textbf{Pre-VR Assessment}:
+    \begin{itemize}
+        \item Dunn's Adult Sensory Profile (60 items)
+        \item Sensory Processing Measure (SPM-2)
+        \item Autism Quotient (AQ-10 screening)
+        \item ADHD Self-Report Scale (ASRS)
+        \item Demographic and musical training questionnaire
+    \end{itemize}
+
+    \item \textbf{VR Interaction Session}:
+    \begin{itemize}
+        \item Current protocol with enhanced logging
+        \item Add physiological measures (optional): pupillometry, heart rate variability
+    \end{itemize}
+
+    \item \textbf{Test-Retest}:
+    \begin{itemize}
+        \item Repeat VR session at 2-week interval
+        \item Assess phenotype stability
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Hypotheses}
+
+\begin{itemize}
+    \item \textbf{H1}: Phenotypes will replicate with similar cluster centers (within 10\% of pilot values)
+    \item \textbf{H2}: Sensory Avoider phenotype correlates with Dunn's ``Avoiding'' quadrant (r $>$ 0.5)
+    \item \textbf{H3}: Fluctuating Seeker phenotype associates with ADHD diagnosis (odds ratio $>$ 2.0)
+    \item \textbf{H4}: Test-retest reliability exceeds 0.70 (intraclass correlation)
+    \item \textbf{H5}: Phenotype membership predicts Sensory Processing Measure scores (R$^2$ $>$ 0.3)
+\end{itemize}
+
+\subsection{Power Analysis}
+
+Based on observed effect sizes (Cohen's d $>$ 1.0):
+\begin{itemize}
+    \item Minimum: n=60 (10 per phenotype)
+    \item Optimal: n=120 (20 per phenotype)
+    \item With 30\% dropout: n=156
+\end{itemize}
+
+For correlation analyses (r = 0.5, $\alpha$ = 0.05, power = 0.80): n = 29 minimum.
+
+\section{Conclusion}
+
+\subsection{What This Study Demonstrates}
+
+\begin{enumerate}
+    \item \textbf{Technical feasibility}: VR behavioral logs can be extracted and processed for sensory pattern analysis
+    \item \textbf{Preliminary phenotypes}: Six statistically distinct behavioral patterns emerge from unsupervised clustering
+    \item \textbf{Methodological framework}: Pipeline from VR logs to behavioral features to ML classification
+    \item \textbf{Hypothesis generation}: Specific phenotype signatures worthy of validation
+\end{enumerate}
+
+\subsection{What This Study Does NOT Demonstrate}
+
+\begin{enumerate}
+    \item \textbf{Clinical utility}: No validation against standardized measures
+    \item \textbf{Generalizability}: Convenience sample limits external validity
+    \item \textbf{Causal mechanisms}: Correlation only, no explanatory model
+    \item \textbf{Novel biomarkers}: Behavioral patterns are descriptive, not diagnostic
+    \item \textbf{Population prevalence}: Sample bias prevents prevalence estimation
+\end{enumerate}
+
+\subsection{Contribution}
+
+This pilot study serves as \textbf{proof-of-concept} for implicit sensory processing assessment via VR behavioral analysis. The six preliminary phenotypes provide testable hypotheses for a properly powered validation study. The methodology establishes a framework for replication, and the honest assessment of limitations ensures scientific integrity.
+
+The work is positioned as a \textbf{feasibility pilot} rather than definitive classification system. Future validation with clinical populations and standardized instruments will determine whether these behavioral phenotypes represent clinically meaningful categories or statistical artifacts of small sample size.
+
+\subsection{Final Note on Novelty}
+
+The approach is not fundamentally novel---VR behavioral tracking, sensory processing assessment, and ML clustering are established techniques. The contribution lies in their integration and the preliminary identification of patterns warranting further investigation. Claims of novelty are limited to:
+
+\begin{itemize}
+    \item Specific application to VR auditory parameter preferences
+    \item Identification of phenotypes not fully explained by existing frameworks (Selective Processor, Fluctuating Seeker)
+    \item Methodology for future researchers to replicate and extend
+\end{itemize}
+
+True novelty will be established only if validation confirms these patterns replicate and correlate meaningfully with clinical presentations.
+
+\end{document}

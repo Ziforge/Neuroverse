@@ -1,0 +1,154 @@
+{
+  "n_phenotypes": 6,
+  "total_participants": 18,
+  "phenotypes": [
+    {
+      "cluster_id": 2,
+      "phenotype": "Sensory Avoider",
+      "description": "Minimizes all stimulation - low volume, frequent muting, no effects",
+      "n": 2,
+      "center": {
+        "volume": 31.503857587136512,
+        "muting": 0.9107587894048013,
+        "delay": 27.660515000000004,
+        "saturation": 0.0
+      },
+      "members": [
+        "PARTICIPANT103",
+        "PARTICIPANT8"
+      ],
+      "vol_label": "Low",
+      "mute_label": "High",
+      "effects_label": "Low",
+      "phenotype_id": 1
+    },
+    {
+      "cluster_id": 4,
+      "phenotype": "Selective Processor",
+      "description": "Low volume but seeks specific effects - compensates with processing",
+      "n": 2,
+      "center": {
+        "volume": 37.135279290655006,
+        "muting": 0.5875558381446594,
+        "delay": 62.40317,
+        "saturation": 68.017885
+      },
+      "members": [
+        "PARTICIPANT10",
+        "PARTICIPANT105"
+      ],
+      "vol_label": "Low",
+      "mute_label": "Medium",
+      "effects_label": "High",
+      "phenotype_id": 2
+    },
+    {
+      "cluster_id": 5,
+      "phenotype": "Purist/Natural",
+      "description": "Moderate volume, minimal processing - prefers unaltered sound",
+      "n": 3,
+      "center": {
+        "volume": 52.01771156749016,
+        "muting": 0.3040919515730991,
+        "delay": 4.560616666666668,
+        "saturation": 4.494756666666664
+      },
+      "members": [
+        "PARTICIPANT101",
+        "PARTICIPANT106",
+        "PARTICIPANT13"
+      ],
+      "vol_label": "Medium",
+      "mute_label": "Low",
+      "effects_label": "Low",
+      "phenotype_id": 3
+    },
+    {
+      "cluster_id": 0,
+      "phenotype": "Profile_0",
+      "description": "Mixed pattern",
+      "n": 6,
+      "center": {
+        "volume": 57.089246804512584,
+        "muting": 0.35114973560351537,
+        "delay": 68.007775,
+        "saturation": 28.101824999999998
+      },
+      "members": [
+        "PARTICIPANT11",
+        "PARTICIPANT2_GETRIDOFMULTIMUTES_",
+        "PARTICIPANT3_MINORMUTEISSUES",
+        "PARTICIPANT4",
+        "PARTICIPANT6",
+        "PARTICIPANT7"
+      ],
+      "vol_label": "Medium",
+      "mute_label": "Medium",
+      "effects_label": "Medium",
+      "phenotype_id": 4
+    },
+    {
+      "cluster_id": 1,
+      "phenotype": "Fluctuating Seeker",
+      "description": "High volume but frequent muting - seeks then retreats",
+      "n": 3,
+      "center": {
+        "volume": 78.78597233660336,
+        "muting": 0.6236320820621957,
+        "delay": 0.0,
+        "saturation": 0.0
+      },
+      "members": [
+        "PARTICIPANT104",
+        "PARTICIPANT14",
+        "PARTICIPANT9"
+      ],
+      "vol_label": "High",
+      "mute_label": "High",
+      "effects_label": "Low",
+      "phenotype_id": 5
+    },
+    {
+      "cluster_id": 3,
+      "phenotype": "Profile_3",
+      "description": "Mixed pattern",
+      "n": 2,
+      "center": {
+        "volume": 86.89846409722223,
+        "muting": 0.2331481003568658,
+        "delay": 28.654654999999998,
+        "saturation": 64.961415
+      },
+      "members": [
+        "PARTICIPANT15",
+        "PARTICIPANT5"
+      ],
+      "vol_label": "High",
+      "mute_label": "Low",
+      "effects_label": "Medium",
+      "phenotype_id": 6
+    }
+  ],
+  "augmentation": {
+    "original_n": 18,
+    "augmented_n": 600,
+    "cv_accuracy": 0.9883333333333333,
+    "cv_std": 0.013017082793177762
+  },
+  "feature_importance": {
+    "volume": 0.3043044505554147,
+    "muting": 0.1984886834224859,
+    "delay": 0.2336261071174218,
+    "saturation": 0.2635807589046776
+  },
+  "model_comparison": {
+    "3_cluster": {
+      "silhouette": 0.23803069930987178,
+      "calinski_harabasz": 7.638585127049137
+    },
+    "6_cluster": {
+      "silhouette": 0.35697696502553267,
+      "calinski_harabasz": 10.16766409114533
+    }
+  }
+}

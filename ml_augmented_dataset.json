@@ -1,0 +1,437 @@
+{
+  "original_dataset": {
+    "n": 18,
+    "class_distribution": {
+      "hyper": 9,
+      "typical": 7,
+      "hypo": 2
+    }
+  },
+  "augmentation_methods": {
+    "smote": {
+      "n": 600,
+      "distribution": {
+        "hyper": 200,
+        "hypo": 200,
+        "typical": 200
+      },
+      "quality_metrics": {
+        "hyper": {
+          "ks": 0.18458333333333335,
+          "wd": 4.157904514215588
+        },
+        "hypo": {
+          "ks": 0.495,
+          "wd": 4.505438218415335
+        },
+        "typical": {
+          "ks": 0.21142857142857144,
+          "wd": 3.3008176495950994
+        }
+      }
+    },
+    "gmm": {
+      "n": 600,
+      "distribution": {
+        "hyper": 200,
+        "hypo": 200,
+        "typical": 200
+      },
+      "quality_metrics": {
+        "hyper": {
+          "ks": 0.24986111111111112,
+          "wd": 2.9926071683990507
+        },
+        "hypo": {
+          "ks": 0.405,
+          "wd": 4.48185298423241
+        },
+        "typical": {
+          "ks": 0.18839285714285714,
+          "wd": 2.4029490209269984
+        }
+      }
+    },
+    "copula": {
+      "n": 600,
+      "distribution": {
+        "hyper": 200,
+        "hypo": 200,
+        "typical": 200
+      },
+      "quality_metrics": {
+        "hyper": {
+          "ks": 0.24722222222222223,
+          "wd": 4.960586976037847
+        },
+        "hypo": {
+          "ks": 0.34125000000000005,
+          "wd": 4.873052067859616
+        },
+        "typical": {
+          "ks": 0.20910714285714288,
+          "wd": 3.4304504147982127
+        }
+      }
+    },
+    "noise_injection": {
+      "n": 600,
+      "distribution": {
+        "hyper": 200,
+        "hypo": 200,
+        "typical": 200
+      },
+      "quality_metrics": {
+        "hyper": {
+          "ks": 0.11597222222222223,
+          "wd": 1.990006494221733
+        },
+        "hypo": {
+          "ks": 0.29375,
+          "wd": 3.747177303149284
+        },
+        "typical": {
+          "ks": 0.17,
+          "wd": 2.606878208524828
+        }
+      }
+    }
+  },
+  "ensemble_dataset": {
+    "n": 1818,
+    "expansion_factor": 101.0,
+    "class_distribution": {
+      "hyper": 609,
+      "typical": 607,
+      "hypo": 602
+    }
+  },
+  "classifier_performance": {
+    "Random Forest": {
+      "mean": 0.9796369376479873,
+      "std": 0.007833438850300462,
+      "min": 0.9668508287292817,
+      "max": 0.9945054945054945,
+      "orig_accuracy": 1.0
+    },
+    "Gradient Boosting": {
+      "mean": 0.9785471434642707,
+      "std": 0.006709063722614121,
+      "min": 0.967032967032967,
+      "max": 0.989010989010989,
+      "orig_accuracy": 1.0
+    }
+  },
+  "feature_importance": {
+    "volume": 0.40880106951077505,
+    "muting": 0.12173597005638738,
+    "delay": 0.11392731748971854,
+    "saturation": 0.35553564294311896
+  },
+  "prediction_uncertainty": [
+    {
+      "id": "PARTICIPANT10",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 99.5,
+      "entropy": 0.031479065747166746,
+      "probabilities": {
+        "hyper": 0.995,
+        "typical": 0.005,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT101",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 99.98412698412699,
+      "entropy": 0.0015473371877937647,
+      "probabilities": {
+        "hyper": 0.9998412698412699,
+        "typical": 0.00015873015873015873,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT103",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 100.0,
+      "entropy": -1.000000082690371e-10,
+      "probabilities": {
+        "hyper": 1.0,
+        "typical": 0.0,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT104",
+      "actual": "typical",
+      "predicted": "typical",
+      "confidence": 84.10918111583875,
+      "entropy": 0.43785496437327687,
+      "probabilities": {
+        "hyper": 0.15890818884161273,
+        "typical": 0.8410918111583875,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT105",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 100.0,
+      "entropy": -1.000000082690371e-10,
+      "probabilities": {
+        "hyper": 1.0,
+        "typical": 0.0,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT106",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 99.95287698412699,
+      "entropy": 0.004080819173961735,
+      "probabilities": {
+        "hyper": 0.9995287698412699,
+        "typical": 0.00047123015873015874,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT11",
+      "actual": "typical",
+      "predicted": "typical",
+      "confidence": 100.0,
+      "entropy": -1.000000082690371e-10,
+      "probabilities": {
+        "hyper": 0.0,
+        "typical": 1.0,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT13",
+      "actual": "typical",
+      "predicted": "typical",
+      "confidence": 99.79138209146396,
+      "entropy": 0.014960777051679697,
+      "probabilities": {
+        "hyper": 0.0,
+        "typical": 0.9979138209146395,
+        "hypo": 0.002086179085360339
+      }
+    },
+    {
+      "id": "PARTICIPANT14",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 100.0,
+      "entropy": -1.000000082690371e-10,
+      "probabilities": {
+        "hyper": 1.0,
+        "typical": 0.0,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT15",
+      "actual": "hypo",
+      "predicted": "hypo",
+      "confidence": 100.0,
+      "entropy": -1.000000082690371e-10,
+      "probabilities": {
+        "hyper": 0.0,
+        "typical": 0.0,
+        "hypo": 1.0
+      }
+    },
+    {
+      "id": "PARTICIPANT2_GETRIDOFMULTIMUTES_",
+      "actual": "typical",
+      "predicted": "typical",
+      "confidence": 99.89806444660186,
+      "entropy": 0.008429458038357157,
+      "probabilities": {
+        "hyper": 0.0001298185941043084,
+        "typical": 0.9989806444660186,
+        "hypo": 0.0008895369398769877
+      }
+    },
+    {
+      "id": "PARTICIPANT3_MINORMUTEISSUES",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 99.5,
+      "entropy": 0.031479065747166746,
+      "probabilities": {
+        "hyper": 0.995,
+        "typical": 0.005,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT4",
+      "actual": "typical",
+      "predicted": "typical",
+      "confidence": 100.0,
+      "entropy": -1.000000082690371e-10,
+      "probabilities": {
+        "hyper": 0.0,
+        "typical": 1.0,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT5",
+      "actual": "hypo",
+      "predicted": "hypo",
+      "confidence": 99.5,
+      "entropy": 0.031479065747166746,
+      "probabilities": {
+        "hyper": 0.005,
+        "typical": 0.0,
+        "hypo": 0.995
+      }
+    },
+    {
+      "id": "PARTICIPANT6",
+      "actual": "typical",
+      "predicted": "typical",
+      "confidence": 100.0,
+      "entropy": -1.000000082690371e-10,
+      "probabilities": {
+        "hyper": 0.0,
+        "typical": 1.0,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT7",
+      "actual": "typical",
+      "predicted": "typical",
+      "confidence": 99.99722222222222,
+      "entropy": 0.0003192014757897081,
+      "probabilities": {
+        "hyper": 2.777777777777778e-05,
+        "typical": 0.9999722222222222,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT8",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 100.0,
+      "entropy": -1.000000082690371e-10,
+      "probabilities": {
+        "hyper": 1.0,
+        "typical": 0.0,
+        "hypo": 0.0
+      }
+    },
+    {
+      "id": "PARTICIPANT9",
+      "actual": "hyper",
+      "predicted": "hyper",
+      "confidence": 91.70634683447184,
+      "entropy": 0.28588346190537645,
+      "probabilities": {
+        "hyper": 0.9170634683447184,
+        "typical": 0.08293653165528164,
+        "hypo": 0.0
+      }
+    }
+  ],
+  "large_population": {
+    "n": 1221,
+    "class_distribution": {
+      "hyper": 500,
+      "hypo": 333,
+      "typical": 388
+    },
+    "statistics": {
+      "hyper": {
+        "volume": {
+          "mean": 46.89075887951077,
+          "std": 16.922307356274448,
+          "q25": 35.786082988012566,
+          "q75": 56.77603394979167
+        },
+        "muting": {
+          "mean": 0.5944031794463401,
+          "std": 0.23455212854004556,
+          "q25": 0.45893934127439195,
+          "q75": 0.7081959919106885
+        },
+        "delay": {
+          "mean": 28.17996201446468,
+          "std": 33.011705974453115,
+          "q25": 0.0,
+          "q75": 61.51869036584582
+        },
+        "saturation": {
+          "mean": 14.452399622931392,
+          "std": 28.29554829243188,
+          "q25": 0.0,
+          "q75": 0.001629819542253743
+        }
+      },
+      "typical": {
+        "volume": {
+          "mean": 63.742296643836994,
+          "std": 9.632320498188335,
+          "q25": 56.737841058412165,
+          "q75": 70.59256258615919
+        },
+        "muting": {
+          "mean": 0.36814514461162035,
+          "std": 0.14229109737607354,
+          "q25": 0.27076672849131245,
+          "q75": 0.4667413406868545
+        },
+        "delay": {
+          "mean": 49.28759648777222,
+          "std": 30.025558458343244,
+          "q25": 24.0869500176484,
+          "q75": 73.29547905359085
+        },
+        "saturation": {
+          "mean": 25.757531660494426,
+          "std": 15.568498496237705,
+          "q25": 14.751696001219079,
+          "q75": 38.10431625295605
+        }
+      },
+      "hypo": {
+        "volume": {
+          "mean": 85.96128850173416,
+          "std": 10.013761110536537,
+          "q25": 79.58039888397717,
+          "q75": 94.35344537213344
+        },
+        "muting": {
+          "mean": 0.2337935140670042,
+          "std": 0.017406429952068994,
+          "q25": 0.2214233993689165,
+          "q75": 0.24488990752715212
+        },
+        "delay": {
+          "mean": 28.287639923266756,
+          "std": 10.663664983980956,
+          "q25": 21.555449934577297,
+          "q75": 35.88710329469084
+        },
+        "saturation": {
+          "mean": 64.60632367954591,
+          "std": 10.317341945176706,
+          "q25": 58.094045763060336,
+          "q75": 71.95732371599003
+        }
+      }
+    }
+  }
+}

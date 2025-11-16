@@ -1,0 +1,393 @@
+{
+  "method": "Temporal Pattern Analysis",
+  "n_participants": 17,
+  "cohort_summary": {
+    "mean_volume_change": -14.192643067197183,
+    "mean_stability_change": -2.951901357785373,
+    "mean_muting_change": 0.06214250065993167
+  },
+  "pattern_distribution": {
+    "POSITIVE_ADAPTATION: Becoming more comfortable": 3,
+    "HYPOSENSITIVE_PATTERN: Increasing stimulation until satisfied": 3,
+    "SENSORY_FATIGUE: Possible overstimulation over time": 5,
+    "MIXED_PATTERN: No clear adaptation trajectory": 4,
+    "TYPICAL_PATTERN: Quick preference identification": 1,
+    "HYPERSENSITIVE_PATTERN: Reducing stimulation, finding safe zone": 1
+  },
+  "individual_results": [
+    {
+      "id": "PARTICIPANT10",
+      "early_avg_volume": 81.08769752427185,
+      "late_avg_volume": 43.27578381322957,
+      "volume_change": -37.81191371104227,
+      "early_volume_std": 11.564753575800752,
+      "late_volume_std": 16.24955115343782,
+      "stability_change": -4.6847975776370685,
+      "first_third_volume": 81.56032326530611,
+      "last_third_volume": 41.55025779411764,
+      "exploration_to_settling": -40.01006547118847,
+      "early_mutes_per_min": 0.6638287985528533,
+      "late_mutes_per_min": 0.33191439927642663,
+      "muting_change": -0.33191439927642663,
+      "session_duration": 12.0513,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "ADAPTATION (less muting later)"
+      ],
+      "interpretation": "POSITIVE_ADAPTATION: Becoming more comfortable"
+    },
+    {
+      "id": "PARTICIPANT101",
+      "early_avg_volume": 42.096445625,
+      "late_avg_volume": 64.18697760504202,
+      "volume_change": 22.090531980042016,
+      "early_volume_std": 25.604197500223222,
+      "late_volume_std": 18.027186477531785,
+      "stability_change": 7.577011022691437,
+      "first_third_volume": 42.096445625,
+      "last_third_volume": 54.82310510344828,
+      "exploration_to_settling": 12.726659478448276,
+      "early_mutes_per_min": 0.3377094854151716,
+      "late_mutes_per_min": 0.4221368567689645,
+      "muting_change": 0.08442737135379291,
+      "session_duration": 23.689,
+      "patterns": [
+        "VOLUME_INCREASE (seeking more stimulation)",
+        "SETTLING_DOWN (less exploration over time)",
+        "STABLE_MUTING"
+      ],
+      "interpretation": "HYPOSENSITIVE_PATTERN: Increasing stimulation until satisfied"
+    },
+    {
+      "id": "PARTICIPANT102",
+      "early_avg_volume": 65.66058853503185,
+      "late_avg_volume": 72.91853681415928,
+      "volume_change": 7.257948279127433,
+      "early_volume_std": 24.12970279822389,
+      "late_volume_std": 8.671701784416573,
+      "stability_change": 15.458001013807316,
+      "first_third_volume": 65.76923692307692,
+      "last_third_volume": 82.94499227272728,
+      "exploration_to_settling": 17.17575534965036,
+      "early_mutes_per_min": 0.612893230594268,
+      "late_mutes_per_min": 0.612893230594268,
+      "muting_change": 0.0,
+      "session_duration": 19.57926666666667,
+      "patterns": [
+        "VOLUME_INCREASE (seeking more stimulation)",
+        "SETTLING_DOWN (less exploration over time)",
+        "STABLE_MUTING"
+      ],
+      "interpretation": "HYPOSENSITIVE_PATTERN: Increasing stimulation until satisfied"
+    },
+    {
+      "id": "PARTICIPANT103",
+      "early_avg_volume": 85.26524809523809,
+      "late_avg_volume": 54.796851005610556,
+      "volume_change": -30.468397089627537,
+      "early_volume_std": 11.058928652543768,
+      "late_volume_std": 23.984686357552714,
+      "stability_change": -12.925757705008946,
+      "first_third_volume": 84.4596745054945,
+      "last_third_volume": 54.796851005610556,
+      "exploration_to_settling": -29.66282349988395,
+      "early_mutes_per_min": 0.3470625493479563,
+      "late_mutes_per_min": 1.2147189227178468,
+      "muting_change": 0.8676563733698905,
+      "session_duration": 11.5253,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "FATIGUE (more muting later)"
+      ],
+      "interpretation": "SENSORY_FATIGUE: Possible overstimulation over time"
+    },
+    {
+      "id": "PARTICIPANT104",
+      "early_avg_volume": 74.14470425824176,
+      "late_avg_volume": 78.58900973166368,
+      "volume_change": 4.44430547342192,
+      "early_volume_std": 14.427154435980912,
+      "late_volume_std": 14.355542193840016,
+      "stability_change": 0.07161224214089579,
+      "first_third_volume": 70.50657619512195,
+      "last_third_volume": 82.94935992771084,
+      "exploration_to_settling": 12.442783732588893,
+      "early_mutes_per_min": 0.3920710171302362,
+      "late_mutes_per_min": 0.6861242799779133,
+      "muting_change": 0.2940532628476771,
+      "session_duration": 20.404466666666668,
+      "patterns": [
+        "VOLUME_STABLE (consistent preference)",
+        "CONSISTENT_EXPLORATION",
+        "STABLE_MUTING"
+      ],
+      "interpretation": "MIXED_PATTERN: No clear adaptation trajectory"
+    },
+    {
+      "id": "PARTICIPANT105",
+      "early_avg_volume": 68.7614818018018,
+      "late_avg_volume": 39.3481052189781,
+      "volume_change": -29.41337658282371,
+      "early_volume_std": 14.786203094876077,
+      "late_volume_std": 19.551331627524178,
+      "stability_change": -4.7651285326481005,
+      "first_third_volume": 69.72432476923078,
+      "last_third_volume": 34.274064372469645,
+      "exploration_to_settling": -35.45026039676113,
+      "early_mutes_per_min": 0.5079300580310091,
+      "late_mutes_per_min": 0.8465500967183486,
+      "muting_change": 0.3386200386873395,
+      "session_duration": 11.81265,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "FATIGUE (more muting later)"
+      ],
+      "interpretation": "SENSORY_FATIGUE: Possible overstimulation over time"
+    },
+    {
+      "id": "PARTICIPANT106",
+      "early_avg_volume": 35.384440328125,
+      "late_avg_volume": 49.53845174418605,
+      "volume_change": 14.154011416061046,
+      "early_volume_std": 26.74528725876367,
+      "late_volume_std": 20.06968759701238,
+      "stability_change": 6.675599661751292,
+      "first_third_volume": 35.384440328125,
+      "last_third_volume": 49.53845174418605,
+      "exploration_to_settling": 14.154011416061046,
+      "early_mutes_per_min": 0.3297856187362203,
+      "late_mutes_per_min": 0.3297856187362203,
+      "muting_change": 0.0,
+      "session_duration": 24.25818333333333,
+      "patterns": [
+        "VOLUME_INCREASE (seeking more stimulation)",
+        "SETTLING_DOWN (less exploration over time)",
+        "STABLE_MUTING"
+      ],
+      "interpretation": "HYPOSENSITIVE_PATTERN: Increasing stimulation until satisfied"
+    },
+    {
+      "id": "PARTICIPANT11",
+      "early_avg_volume": 55.36276090909091,
+      "late_avg_volume": 34.193023478142074,
+      "volume_change": -21.169737430948835,
+      "early_volume_std": 14.780242447888787,
+      "late_volume_std": 19.12585748150792,
+      "stability_change": -4.345615033619135,
+      "first_third_volume": 52.9095152173913,
+      "last_third_volume": 40.82304155555555,
+      "exploration_to_settling": -12.086473661835754,
+      "early_mutes_per_min": 0.23107718555690565,
+      "late_mutes_per_min": 0.4621543711138113,
+      "muting_change": 0.23107718555690565,
+      "session_duration": 8.655116666666666,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "STABLE_MUTING"
+      ],
+      "interpretation": "MIXED_PATTERN: No clear adaptation trajectory"
+    },
+    {
+      "id": "PARTICIPANT13",
+      "early_avg_volume": 61.00996103174602,
+      "late_avg_volume": 59.46868470769231,
+      "volume_change": -1.5412763240537117,
+      "early_volume_std": 16.79214415161775,
+      "late_volume_std": 12.534796551849476,
+      "stability_change": 4.257347599768275,
+      "first_third_volume": 61.26234645533142,
+      "last_third_volume": 59.54081927392739,
+      "exploration_to_settling": -1.7215271814040278,
+      "early_mutes_per_min": 0.16205365191280705,
+      "late_mutes_per_min": 0.24308047786921055,
+      "muting_change": 0.08102682595640351,
+      "session_duration": 24.683183333333332,
+      "patterns": [
+        "VOLUME_STABLE (consistent preference)",
+        "SETTLING_DOWN (less exploration over time)",
+        "STABLE_MUTING"
+      ],
+      "interpretation": "TYPICAL_PATTERN: Quick preference identification"
+    },
+    {
+      "id": "PARTICIPANT14",
+      "early_avg_volume": 74.84139434285716,
+      "late_avg_volume": 70.50274674846627,
+      "volume_change": -4.338647594390892,
+      "early_volume_std": 14.063674430596517,
+      "late_volume_std": 22.863214035130323,
+      "stability_change": -8.799539604533805,
+      "first_third_volume": 74.9359382,
+      "last_third_volume": 67.26039008064517,
+      "exploration_to_settling": -7.675548119354829,
+      "early_mutes_per_min": 0.9466173549144561,
+      "late_mutes_per_min": 0.6310782366096374,
+      "muting_change": -0.31553911830481873,
+      "session_duration": 12.676716666666666,
+      "patterns": [
+        "VOLUME_STABLE (consistent preference)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "ADAPTATION (less muting later)"
+      ],
+      "interpretation": "POSITIVE_ADAPTATION: Becoming more comfortable"
+    },
+    {
+      "id": "PARTICIPANT3_MINORMUTEISSUES",
+      "early_avg_volume": 78.4718145,
+      "late_avg_volume": 39.33251323272727,
+      "volume_change": -39.13930126727272,
+      "early_volume_std": 13.189524564591203,
+      "late_volume_std": 25.379585483674052,
+      "stability_change": -12.19006091908285,
+      "first_third_volume": 75.56565222222223,
+      "last_third_volume": 39.33251323272727,
+      "exploration_to_settling": -36.233138989494954,
+      "early_mutes_per_min": 0.2732791102032172,
+      "late_mutes_per_min": 0.2732791102032172,
+      "muting_change": 0.0,
+      "session_duration": 14.637049999999999,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "STABLE_MUTING"
+      ],
+      "interpretation": "MIXED_PATTERN: No clear adaptation trajectory"
+    },
+    {
+      "id": "PARTICIPANT4",
+      "early_avg_volume": 79.00826044554455,
+      "late_avg_volume": 61.05884903389473,
+      "volume_change": -17.94941141164982,
+      "early_volume_std": 15.454084615169611,
+      "late_volume_std": 25.387990570374818,
+      "stability_change": -9.933905955205207,
+      "first_third_volume": 77.75847860335196,
+      "last_third_volume": 58.050994932790694,
+      "exploration_to_settling": -19.707483670561267,
+      "early_mutes_per_min": 0.15312059778281373,
+      "late_mutes_per_min": 0.45936179334844124,
+      "muting_change": 0.3062411955656275,
+      "session_duration": 13.0616,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "FATIGUE (more muting later)"
+      ],
+      "interpretation": "SENSORY_FATIGUE: Possible overstimulation over time"
+    },
+    {
+      "id": "PARTICIPANT5",
+      "early_avg_volume": 77.99132573033707,
+      "late_avg_volume": 43.84366040590407,
+      "volume_change": -34.147665324433,
+      "early_volume_std": 12.017770095773942,
+      "late_volume_std": 24.720733462866942,
+      "stability_change": -12.702963367093,
+      "first_third_volume": 77.99132573033707,
+      "last_third_volume": 43.84366040590407,
+      "exploration_to_settling": -34.147665324433,
+      "early_mutes_per_min": 0.0,
+      "late_mutes_per_min": 0.5032804096702534,
+      "muting_change": 0.5032804096702534,
+      "session_duration": 11.921783333333334,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "FATIGUE (more muting later)"
+      ],
+      "interpretation": "SENSORY_FATIGUE: Possible overstimulation over time"
+    },
+    {
+      "id": "PARTICIPANT6",
+      "early_avg_volume": 74.655922,
+      "late_avg_volume": 65.83393370967741,
+      "volume_change": -8.821988290322594,
+      "early_volume_std": 18.266262412242693,
+      "late_volume_std": 14.98280597865048,
+      "stability_change": 3.283456433592212,
+      "first_third_volume": 72.75532107692308,
+      "last_third_volume": 53.53768518518518,
+      "exploration_to_settling": -19.2176358917379,
+      "early_mutes_per_min": 0.7784107770972089,
+      "late_mutes_per_min": 0.3892053885486044,
+      "muting_change": -0.3892053885486044,
+      "session_duration": 10.27735,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "SETTLING_DOWN (less exploration over time)",
+        "ADAPTATION (less muting later)"
+      ],
+      "interpretation": "HYPERSENSITIVE_PATTERN: Reducing stimulation, finding safe zone"
+    },
+    {
+      "id": "PARTICIPANT7",
+      "early_avg_volume": 67.11651334693877,
+      "late_avg_volume": 40.318663599236636,
+      "volume_change": -26.797849747702138,
+      "early_volume_std": 21.462356322340582,
+      "late_volume_std": 22.198096770024783,
+      "stability_change": -0.7357404476842007,
+      "first_third_volume": 75.1481512,
+      "last_third_volume": 37.33249255327869,
+      "exploration_to_settling": -37.81565864672131,
+      "early_mutes_per_min": 0.41325776838509193,
+      "late_mutes_per_min": 0.41325776838509193,
+      "muting_change": 0.0,
+      "session_duration": 14.518783333333333,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "CONSISTENT_EXPLORATION",
+        "STABLE_MUTING"
+      ],
+      "interpretation": "MIXED_PATTERN: No clear adaptation trajectory"
+    },
+    {
+      "id": "PARTICIPANT8",
+      "early_avg_volume": 55.429339068750004,
+      "late_avg_volume": 35.292327091443845,
+      "volume_change": -20.13701197730616,
+      "early_volume_std": 24.748703033392864,
+      "late_volume_std": 23.49969806209441,
+      "stability_change": 1.2490049712984543,
+      "first_third_volume": 57.177319530612245,
+      "last_third_volume": 32.081048779041915,
+      "exploration_to_settling": -25.09627075157033,
+      "early_mutes_per_min": 1.6187528665415347,
+      "late_mutes_per_min": 0.462500819011867,
+      "muting_change": -1.1562520475296676,
+      "session_duration": 8.648633333333333,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "CONSISTENT_EXPLORATION",
+        "ADAPTATION (less muting later)"
+      ],
+      "interpretation": "POSITIVE_ADAPTATION: Becoming more comfortable"
+    },
+    {
+      "id": "PARTICIPANT9",
+      "early_avg_volume": 67.15745392857143,
+      "late_avg_volume": 49.672301389140266,
+      "volume_change": -17.485152539431162,
+      "early_volume_std": 6.654774618381333,
+      "late_volume_std": 24.32562150327025,
+      "stability_change": -17.670846884888917,
+      "first_third_volume": 67.15745392857143,
+      "last_third_volume": 50.48223784065934,
+      "exploration_to_settling": -16.67521608791209,
+      "early_mutes_per_min": 0.27147540093523276,
+      "late_mutes_per_min": 0.8144262028056983,
+      "muting_change": 0.5429508018704656,
+      "session_duration": 7.36715,
+      "patterns": [
+        "VOLUME_DECREASE (reducing stimulation)",
+        "INCREASING_SEARCH (more exploration over time)",
+        "FATIGUE (more muting later)"
+      ],
+      "interpretation": "SENSORY_FATIGUE: Possible overstimulation over time"
+    }
+  ]
+}

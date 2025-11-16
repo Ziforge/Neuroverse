@@ -1,0 +1,507 @@
+{
+  "method": "Questionnaire-Behavior Cross-Validation",
+  "cohort_stats": {
+    "volume_mean": 58.112318582743534,
+    "volume_std": 19.19319936248276,
+    "mute_mean": 0.4640553316855349,
+    "mute_std": 0.23192128310440951,
+    "delay_mean": 36.620287777777776,
+    "delay_std": 31.95363233403843,
+    "sat_mean": 24.891878888888886,
+    "sat_std": 27.3608377823968
+  },
+  "overall_alignment": 55.55555555555556,
+  "classification_counts": {
+    "Hypersensitive": 9,
+    "Typical": 7,
+    "Hyposensitive": 2
+  },
+  "individual_results": [
+    {
+      "id": "PARTICIPANT10",
+      "questionnaire_class": "typical",
+      "behavioral_class": "hyper",
+      "combined_class": "hyper",
+      "alignment": "PARTIALLY ALIGNED ~",
+      "confidence": 36.666666666666664,
+      "questionnaire_scores": {
+        "hyper": 1,
+        "typical": 3,
+        "hypo": 2
+      },
+      "behavior_scores": {
+        "hyper": 3,
+        "typical": 1,
+        "hypo": 2
+      },
+      "combined_scores": {
+        "hyper": 11,
+        "typical": 9,
+        "hypo": 10
+      },
+      "settled_volume": 39.7975772826087,
+      "final_delay": 78.29635,
+      "final_saturation": 57.58496,
+      "mutes_per_minute": 0.49787159891463995
+    },
+    {
+      "id": "PARTICIPANT101",
+      "questionnaire_class": "hypo",
+      "behavioral_class": "hyper",
+      "combined_class": "hyper",
+      "alignment": "MISMATCHED \u2717",
+      "confidence": 56.666666666666664,
+      "questionnaire_scores": {
+        "hyper": 1,
+        "typical": 2,
+        "hypo": 3
+      },
+      "behavior_scores": {
+        "hyper": 5,
+        "typical": 1,
+        "hypo": 0
+      },
+      "combined_scores": {
+        "hyper": 17,
+        "typical": 7,
+        "hypo": 6
+      },
+      "settled_volume": 46.79034894736842,
+      "final_delay": 0.0,
+      "final_saturation": 0.0,
+      "mutes_per_minute": 0.379923171092068
+    },
+    {
+      "id": "PARTICIPANT103",
+      "questionnaire_class": "typical",
+      "behavioral_class": "hyper",
+      "combined_class": "hyper",
+      "alignment": "PARTIALLY ALIGNED ~",
+      "confidence": 63.63636363636363,
+      "questionnaire_scores": {
+        "hyper": 0,
+        "typical": 4,
+        "hypo": 2
+      },
+      "behavior_scores": {
+        "hyper": 7,
+        "typical": 0,
+        "hypo": 0
+      },
+      "combined_scores": {
+        "hyper": 21,
+        "typical": 8,
+        "hypo": 4
+      },
+      "settled_volume": 33.6496284082353,
+      "final_delay": 0.0,
+      "final_saturation": 0.0,
+      "mutes_per_minute": 0.7808907360329016
+    },
+    {
+      "id": "PARTICIPANT104",
+      "questionnaire_class": "typical",
+      "behavioral_class": "hypo",
+      "combined_class": "typical",
+      "alignment": "PARTIALLY ALIGNED ~",
+      "confidence": 43.333333333333336,
+      "questionnaire_scores": {
+        "hyper": 1,
+        "typical": 5,
+        "hypo": 0
+      },
+      "behavior_scores": {
+        "hyper": 2,
+        "typical": 1,
+        "hypo": 3
+      },
+      "combined_scores": {
+        "hyper": 8,
+        "typical": 13,
+        "hypo": 9
+      },
+      "settled_volume": 78.78551092391305,
+      "final_delay": 0.0,
+      "final_saturation": 0.0,
+      "mutes_per_minute": 0.5390976485540747
+    },
+    {
+      "id": "PARTICIPANT105",
+      "questionnaire_class": "typical",
+      "behavioral_class": "hyper",
+      "combined_class": "hyper",
+      "alignment": "PARTIALLY ALIGNED ~",
+      "confidence": 45.45454545454545,
+      "questionnaire_scores": {
+        "hyper": 0,
+        "typical": 4,
+        "hypo": 2
+      },
+      "behavior_scores": {
+        "hyper": 5,
+        "typical": 1,
+        "hypo": 1
+      },
+      "combined_scores": {
+        "hyper": 15,
+        "typical": 11,
+        "hypo": 7
+      },
+      "settled_volume": 34.4729812987013,
+      "final_delay": 46.50999,
+      "final_saturation": 78.45081,
+      "mutes_per_minute": 0.6772400773746788
+    },
+    {
+      "id": "PARTICIPANT106",
+      "questionnaire_class": "typical",
+      "behavioral_class": "hyper",
+      "combined_class": "hyper",
+      "alignment": "PARTIALLY ALIGNED ~",
+      "confidence": 63.33333333333333,
+      "questionnaire_scores": {
+        "hyper": 2,
+        "typical": 3,
+        "hypo": 1
+      },
+      "behavior_scores": {
+        "hyper": 5,
+        "typical": 1,
+        "hypo": 0
+      },
+      "combined_scores": {
+        "hyper": 19,
+        "typical": 9,
+        "hypo": 2
+      },
+      "settled_volume": 41.954402040816326,
+      "final_delay": 0.0,
+      "final_saturation": 0.0,
+      "mutes_per_minute": 0.3297856187362203
+    },
+    {
+      "id": "PARTICIPANT11",
+      "questionnaire_class": "hyper",
+      "behavioral_class": "typical",
+      "combined_class": "typical",
+      "alignment": "PARTIALLY ALIGNED ~",
+      "confidence": 44.44444444444444,
+      "questionnaire_scores": {
+        "hyper": 4,
+        "typical": 0,
+        "hypo": 2
+      },
+      "behavior_scores": {
+        "hyper": 0,
+        "typical": 4,
+        "hypo": 1
+      },
+      "combined_scores": {
+        "hyper": 8,
+        "typical": 12,
+        "hypo": 7
+      },
+      "settled_volume": 55.29643165289257,
+      "final_delay": 62.44203,
+      "final_saturation": 29.23377,
+      "mutes_per_minute": 0.3466157783353585
+    },
+    {
+      "id": "PARTICIPANT13",
+      "questionnaire_class": "typical",
+      "behavioral_class": "typical",
+      "combined_class": "typical",
+      "alignment": "ALIGNED \u2713",
+      "confidence": 69.56521739130434,
+      "questionnaire_scores": {
+        "hyper": 1,
+        "typical": 2,
+        "hypo": 1
+      },
+      "behavior_scores": {
+        "hyper": 1,
+        "typical": 4,
+        "hypo": 0
+      },
+      "combined_scores": {
+        "hyper": 5,
+        "typical": 16,
+        "hypo": 2
+      },
+      "settled_volume": 67.30838371428572,
+      "final_delay": 13.68185,
+      "final_saturation": 13.48427,
+      "mutes_per_minute": 0.2025670648910088
+    },
+    {
+      "id": "PARTICIPANT14",
+      "questionnaire_class": "hyper",
+      "behavioral_class": "hyper",
+      "combined_class": "hyper",
+      "alignment": "ALIGNED \u2713",
+      "confidence": 48.484848484848484,
+      "questionnaire_scores": {
+        "hyper": 2,
+        "typical": 2,
+        "hypo": 2
+      },
+      "behavior_scores": {
+        "hyper": 4,
+        "typical": 0,
+        "hypo": 3
+      },
+      "combined_scores": {
+        "hyper": 16,
+        "typical": 4,
+        "hypo": 13
+      },
+      "settled_volume": 71.71971343283582,
+      "final_delay": 0.0,
+      "final_saturation": 0.0,
+      "mutes_per_minute": 0.7888477957620468
+    },
+    {
+      "id": "PARTICIPANT15",
+      "questionnaire_class": "hypo",
+      "behavioral_class": "hypo",
+      "combined_class": "hypo",
+      "alignment": "ALIGNED \u2713",
+      "confidence": 60.0,
+      "questionnaire_scores": {
+        "hyper": 2,
+        "typical": 1,
+        "hypo": 3
+      },
+      "behavior_scores": {
+        "hyper": 0,
+        "typical": 2,
+        "hypo": 4
+      },
+      "combined_scores": {
+        "hyper": 4,
+        "typical": 8,
+        "hypo": 18
+      },
+      "settled_volume": 98.59538,
+      "final_delay": 40.0,
+      "final_saturation": 75.93826,
+      "mutes_per_minute": 0.21465599587860487
+    },
+    {
+      "id": "PARTICIPANT2_GETRIDOFMULTIMUTES_",
+      "questionnaire_class": "typical",
+      "behavioral_class": "hypo",
+      "combined_class": "typical",
+      "alignment": "PARTIALLY ALIGNED ~",
+      "confidence": 53.333333333333336,
+      "questionnaire_scores": {
+        "hyper": 1,
+        "typical": 5,
+        "hypo": 0
+      },
+      "behavior_scores": {
+        "hyper": 0,
+        "typical": 2,
+        "hypo": 4
+      },
+      "combined_scores": {
+        "hyper": 2,
+        "typical": 16,
+        "hypo": 12
+      },
+      "settled_volume": 74.09483012195122,
+      "final_delay": 69.85341,
+      "final_saturation": 35.08684,
+      "mutes_per_minute": 0.18369647830889022
+    },
+    {
+      "id": "PARTICIPANT3_MINORMUTEISSUES",
+      "questionnaire_class": "hypo",
+      "behavioral_class": "hyper",
+      "combined_class": "hyper",
+      "alignment": "MISMATCHED \u2717",
+      "confidence": 53.333333333333336,
+      "questionnaire_scores": {
+        "hyper": 2,
+        "typical": 1,
+        "hypo": 3
+      },
+      "behavior_scores": {
+        "hyper": 4,
+        "typical": 1,
+        "hypo": 1
+      },
+      "combined_scores": {
+        "hyper": 16,
+        "typical": 5,
+        "hypo": 9
+      },
+      "settled_volume": 44.400360000000006,
+      "final_delay": 75.61533,
+      "final_saturation": 0.0,
+      "mutes_per_minute": 0.2732791102032172
+    },
+    {
+      "id": "PARTICIPANT4",
+      "questionnaire_class": "typical",
+      "behavioral_class": "typical",
+      "combined_class": "typical",
+      "alignment": "ALIGNED \u2713",
+      "confidence": 55.55555555555556,
+      "questionnaire_scores": {
+        "hyper": 1,
+        "typical": 3,
+        "hypo": 2
+      },
+      "behavior_scores": {
+        "hyper": 0,
+        "typical": 3,
+        "hypo": 2
+      },
+      "combined_scores": {
+        "hyper": 2,
+        "typical": 15,
+        "hypo": 10
+      },
+      "settled_volume": 62.664984740740735,
+      "final_delay": 89.04765,
+      "final_saturation": 50.73149,
+      "mutes_per_minute": 0.30624119556562746
+    },
+    {
+      "id": "PARTICIPANT5",
+      "questionnaire_class": "typical",
+      "behavioral_class": "hypo",
+      "combined_class": "hypo",
+      "alignment": "PARTIALLY ALIGNED ~",
+      "confidence": 46.666666666666664,
+      "questionnaire_scores": {
+        "hyper": 1,
+        "typical": 4,
+        "hypo": 1
+      },
+      "behavior_scores": {
+        "hyper": 1,
+        "typical": 1,
+        "hypo": 4
+      },
+      "combined_scores": {
+        "hyper": 5,
+        "typical": 11,
+        "hypo": 14
+      },
+      "settled_volume": 75.20154819444446,
+      "final_delay": 17.30931,
+      "final_saturation": 53.98457,
+      "mutes_per_minute": 0.2516402048351267
+    },
+    {
+      "id": "PARTICIPANT6",
+      "questionnaire_class": "typical",
+      "behavioral_class": "typical",
+      "combined_class": "typical",
+      "alignment": "ALIGNED \u2713",
+      "confidence": 73.33333333333333,
+      "questionnaire_scores": {
+        "hyper": 0,
+        "typical": 5,
+        "hypo": 1
+      },
+      "behavior_scores": {
+        "hyper": 2,
+        "typical": 4,
+        "hypo": 0
+      },
+      "combined_scores": {
+        "hyper": 6,
+        "typical": 22,
+        "hypo": 2
+      },
+      "settled_volume": 53.72394307692308,
+      "final_delay": 40.03997,
+      "final_saturation": 16.75484,
+      "mutes_per_minute": 0.5838080828229066
+    },
+    {
+      "id": "PARTICIPANT7",
+      "questionnaire_class": "typical",
+      "behavioral_class": "typical",
+      "combined_class": "typical",
+      "alignment": "ALIGNED \u2713",
+      "confidence": 74.07407407407408,
+      "questionnaire_scores": {
+        "hyper": 0,
+        "typical": 4,
+        "hypo": 2
+      },
+      "behavior_scores": {
+        "hyper": 0,
+        "typical": 4,
+        "hypo": 1
+      },
+      "combined_scores": {
+        "hyper": 0,
+        "typical": 20,
+        "hypo": 7
+      },
+      "settled_volume": 52.3549312345679,
+      "final_delay": 71.04826,
+      "final_saturation": 36.80401,
+      "mutes_per_minute": 0.41325776838509193
+    },
+    {
+      "id": "PARTICIPANT8",
+      "questionnaire_class": "hypo",
+      "behavioral_class": "hyper",
+      "combined_class": "hyper",
+      "alignment": "MISMATCHED \u2717",
+      "confidence": 60.60606060606061,
+      "questionnaire_scores": {
+        "hyper": 1,
+        "typical": 1,
+        "hypo": 4
+      },
+      "behavior_scores": {
+        "hyper": 6,
+        "typical": 0,
+        "hypo": 1
+      },
+      "combined_scores": {
+        "hyper": 20,
+        "typical": 2,
+        "hypo": 11
+      },
+      "settled_volume": 29.35808676603773,
+      "final_delay": 55.32103,
+      "final_saturation": 0.0,
+      "mutes_per_minute": 1.040626842776701
+    },
+    {
+      "id": "PARTICIPANT9",
+      "questionnaire_class": "hyper",
+      "behavioral_class": "hypo",
+      "combined_class": "hyper",
+      "alignment": "MISMATCHED \u2717",
+      "confidence": 46.666666666666664,
+      "questionnaire_scores": {
+        "hyper": 4,
+        "typical": 2,
+        "hypo": 0
+      },
+      "behavior_scores": {
+        "hyper": 2,
+        "typical": 1,
+        "hypo": 3
+      },
+      "combined_scores": {
+        "hyper": 14,
+        "typical": 7,
+        "hypo": 9
+      },
+      "settled_volume": 85.85269265306123,
+      "final_delay": 0.0,
+      "final_saturation": 0.0,
+      "mutes_per_minute": 0.5429508018704655
+    }
+  ]
+}

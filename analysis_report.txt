@@ -1,0 +1,267 @@
+================================================================================
+NEUROVERSE PARTICIPANT SENSORY PROFILE ANALYSIS
+================================================================================
+
+Total Participants: 20
+  Hypersensitive: 1 (5.0%)
+  Hyposensitive: 11 (55.0%)
+  Typical: 8 (40.0%)
+
+--------------------------------------------------------------------------------
+INDIVIDUAL PARTICIPANT CLASSIFICATIONS
+--------------------------------------------------------------------------------
+
+PARTICIPANT10
+  Classification: Hyposensitive (Confidence: 50.0%)
+  Sensory Score: Hyper=3, Hypo=7, Typical=4
+  Avg Volume: 60.1%
+  Mute Events: 6
+  Session Duration: 12.1 min
+  Total Adjustments: 463
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 1, 'saturation': 3, 'delay': 2, 'reverb': 3, 'pitch_shift': 2}
+
+PARTICIPANT101
+  Classification: Hyposensitive (Confidence: 58.3%)
+  Sensory Score: Hyper=1, Hypo=7, Typical=4
+  Avg Volume: 60.5%
+  Mute Events: 9
+  Session Duration: 23.7 min
+  Total Adjustments: 286
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 1, 'saturation': 3, 'delay': 2, 'reverb': 3, 'pitch_shift': 3}
+
+PARTICIPANT102
+  Classification: Hyposensitive (Confidence: 55.6%)
+  Sensory Score: Hyper=3, Hypo=5, Typical=1
+  Avg Volume: 68.7%
+  Mute Events: 12
+  Session Duration: 19.6 min
+  Total Adjustments: 270
+
+PARTICIPANT103
+  Classification: Hyposensitive (Confidence: 57.1%)
+  Sensory Score: Hyper=3, Hypo=8, Typical=3
+  Avg Volume: 63.7%
+  Mute Events: 9
+  Session Duration: 11.5 min
+  Total Adjustments: 429
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 3, 'saturation': 4, 'delay': 2, 'reverb': 3, 'pitch_shift': 4}
+
+PARTICIPANT104
+  Classification: Typical (Confidence: 46.2%)
+  Sensory Score: Hyper=3, Hypo=4, Typical=6
+  Avg Volume: 76.8%
+  Mute Events: 11
+  Session Duration: 20.4 min
+  Total Adjustments: 923
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 2, 'saturation': 2, 'delay': 2, 'reverb': 2, 'pitch_shift': 1}
+
+PARTICIPANT105
+  Classification: Typical (Confidence: 50.0%)
+  Sensory Score: Hyper=3, Hypo=3, Typical=6
+  Avg Volume: 47.8%
+  Mute Events: 8
+  Session Duration: 11.8 min
+  Total Adjustments: 385
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 2, 'saturation': 2, 'delay': 3, 'reverb': 3, 'pitch_shift': 2}
+
+PARTICIPANT106
+  Classification: Typical (Confidence: 45.5%)
+  Sensory Score: Hyper=3, Hypo=3, Typical=5
+  Avg Volume: 47.7%
+  Mute Events: 8
+  Session Duration: 24.3 min
+  Total Adjustments: 494
+  Questionnaire Responses: {'sound_env': 1, 'pitch_shift': 2, 'sound_texture': 2, 'saturation': 3, 'delay': 1, 'reverb': 2}
+
+PARTICIPANT11
+  Classification: Typical (Confidence: 23.1%)
+  Sensory Score: Hyper=5, Hypo=5, Typical=3
+  Avg Volume: 42.6%
+  Mute Events: 3
+  Session Duration: 8.7 min
+  Total Adjustments: 608
+  Questionnaire Responses: {'sound_env': 1, 'sound_texture': 1, 'saturation': 1, 'delay': 3, 'reverb': 3, 'pitch_shift': 1}
+
+PARTICIPANT12
+  Classification: Hyposensitive (Confidence: 58.3%)
+  Sensory Score: Hyper=4, Hypo=7, Typical=1
+  Avg Volume: 0.0%
+  Mute Events: 14
+  Session Duration: 16.6 min
+  Total Adjustments: 0
+  Questionnaire Responses: {'sound_env': 3, 'sound_texture': 2, 'saturation': 3, 'delay': 3, 'reverb': 3, 'pitch_shift': 1}
+
+PARTICIPANT13
+  Classification: Hyposensitive (Confidence: 61.5%)
+  Sensory Score: Hyper=1, Hypo=8, Typical=4
+  Avg Volume: 60.3%
+  Mute Events: 5
+  Session Duration: 24.7 min
+  Total Adjustments: 703
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 1, 'saturation': 3, 'delay': 2}
+
+PARTICIPANT14
+  Classification: Hyposensitive (Confidence: 56.2%)
+  Sensory Score: Hyper=6, Hypo=9, Typical=1
+  Avg Volume: 72.7%
+  Mute Events: 10
+  Session Duration: 12.7 min
+  Total Adjustments: 338
+  Questionnaire Responses: {'sound_env': 1, 'sound_texture': 1, 'saturation': 3, 'delay': 2, 'reverb': 3, 'pitch_shift': 2}
+
+PARTICIPANT15
+  Classification: Hyposensitive (Confidence: 66.7%)
+  Sensory Score: Hyper=2, Hypo=10, Typical=3
+  Avg Volume: 62.2%
+  Mute Events: 3
+  Session Duration: 14.0 min
+  Total Adjustments: 14
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 1, 'saturation': 3, 'delay': 3, 'reverb': 3, 'pitch_shift': 1}
+
+PARTICIPANT2_GETRIDOFMULTIMUTES_
+  Classification: Typical (Confidence: 54.5%)
+  Sensory Score: Hyper=1, Hypo=4, Typical=6
+  Avg Volume: 71.5%
+  Mute Events: 4
+  Session Duration: 21.8 min
+  Total Adjustments: 821
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 1, 'saturation': 2, 'delay': 2, 'reverb': 2, 'pitch_shift': 2}
+
+PARTICIPANT3_MINORMUTEISSUES
+  Classification: Typical (Confidence: 41.7%)
+  Sensory Score: Hyper=2, Hypo=5, Typical=5
+  Avg Volume: 45.4%
+  Mute Events: 4
+  Session Duration: 14.7 min
+  Total Adjustments: 130
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 1, 'saturation': 3, 'delay': 3, 'reverb': 3, 'pitch_shift': 1}
+
+PARTICIPANT4
+  Classification: Hyposensitive (Confidence: 61.5%)
+  Sensory Score: Hyper=0, Hypo=8, Typical=5
+  Avg Volume: 66.4%
+  Mute Events: 4
+  Session Duration: 13.1 min
+  Total Adjustments: 677
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 2, 'saturation': 2, 'delay': 3, 'reverb': 3, 'pitch_shift': 1}
+
+PARTICIPANT5
+  Classification: Typical (Confidence: 80.0%)
+  Sensory Score: Hyper=0, Hypo=2, Typical=8
+  Avg Volume: 52.3%
+  Mute Events: 3
+  Session Duration: 11.9 min
+  Total Adjustments: 360
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 2, 'saturation': 3, 'delay': 2, 'reverb': 2, 'pitch_shift': 1}
+
+PARTICIPANT6
+  Classification: Hyposensitive (Confidence: 42.9%)
+  Sensory Score: Hyper=3, Hypo=6, Typical=5
+  Avg Volume: 70.5%
+  Mute Events: 6
+  Session Duration: 10.3 min
+  Total Adjustments: 132
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 2, 'saturation': 3, 'delay': 2, 'reverb': 2, 'pitch_shift': 2}
+
+PARTICIPANT7
+  Classification: Typical (Confidence: 53.8%)
+  Sensory Score: Hyper=0, Hypo=6, Typical=7
+  Avg Volume: 50.0%
+  Mute Events: 6
+  Session Duration: 14.5 min
+  Total Adjustments: 409
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 2, 'saturation': 3, 'delay': 2, 'reverb': 3, 'pitch_shift': 2}
+
+PARTICIPANT8
+  Classification: Hyposensitive (Confidence: 60.0%)
+  Sensory Score: Hyper=3, Hypo=9, Typical=3
+  Avg Volume: 41.3%
+  Mute Events: 9
+  Session Duration: 8.7 min
+  Total Adjustments: 534
+  Questionnaire Responses: {'sound_env': 3, 'sound_texture': 2, 'saturation': 3, 'delay': 3, 'reverb': 3, 'pitch_shift': 1}
+
+PARTICIPANT9
+  Classification: Hypersensitive (Confidence: 46.7%)
+  Sensory Score: Hyper=7, Hypo=3, Typical=5
+  Avg Volume: 51.6%
+  Mute Events: 4
+  Session Duration: 7.4 min
+  Total Adjustments: 249
+  Questionnaire Responses: {'sound_env': 2, 'sound_texture': 1, 'saturation': 1, 'delay': 1, 'reverb': 2, 'pitch_shift': 1}
+
+================================================================================
+FORCE TECHNOLOGY SOUND WHEEL MAPPING
+================================================================================
+
+HYPERSENSITIVE PROFILE Sound Wheel Characteristics:
+  Loudness: Medium (52%)
+  Attack: Imprecise (smoothed)
+  Bass Precision: Moderate
+  Punch: Weak
+  Treble Strength: A little
+  Brilliance: Low
+  Tinny: A little
+  Midrange Strength: A little
+  Bass Strength: Neutral
+  Bass Depth: A little
+  Timbral Balance: Dark/Warm
+  Full: Low degree
+  Depth: Shallow
+  Width: Small
+  Envelopment: Small
+  Reverberance: Dry
+  Clarity: Clear (but filtered)
+  Presence: A little
+  Detail: Simple
+  Natural: A lot
+  Distortion: A little
+  Compression: A lot (limited dynamics)
+
+HYPOSENSITIVE PROFILE Sound Wheel Characteristics:
+  Loudness: Medium (60%)
+  Attack: Precise
+  Bass Precision: Precise
+  Punch: Strong
+  Treble Strength: A lot
+  Brilliance: High
+  Tinny: A lot
+  Midrange Strength: A lot
+  Bass Strength: A lot
+  Bass Depth: A lot
+  Timbral Balance: Bright
+  Full: High degree
+  Depth: Deep
+  Width: Large
+  Envelopment: Large
+  Reverberance: Wet
+  Clarity: Clear
+  Presence: A lot
+  Detail: Rich
+  Natural: Neutral
+  Distortion: Moderate
+  Compression: A little (full dynamics)
+
+TYPICAL PROFILE Sound Wheel Characteristics:
+  Loudness: Loud (77%)
+  Attack: Moderate
+  Bass Precision: Moderate
+  Punch: Moderate
+  Treble Strength: Neutral
+  Brilliance: Moderate
+  Tinny: Neutral
+  Midrange Strength: Neutral
+  Bass Strength: Neutral
+  Bass Depth: Neutral
+  Timbral Balance: Neutral
+  Full: Moderate
+  Depth: Moderate
+  Width: Moderate
+  Envelopment: Moderate
+  Reverberance: Moderate
+  Clarity: Clear
+  Presence: Moderate
+  Detail: Moderate
+  Natural: A lot
+  Distortion: A little
+  Compression: Neutral

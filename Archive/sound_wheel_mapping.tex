@@ -1,0 +1,136 @@
+\section{Results}
+
+\subsection{Participant Classification Summary}
+
+Based on the analysis of 20 participants' behavioral data and questionnaire responses, the following sensory profile distribution was observed:
+
+\begin{itemize}
+    \item \textbf{Hypersensitive}: 1 participant (5.0\%)
+    \item \textbf{Hyposensitive}: 11 participants (55.0\%)
+    \item \textbf{Typical}: 8 participants (40.0\%)
+\end{itemize}
+
+The predominance of hyposensitive classifications may be attributed to the convenience sampling method, which primarily recruited Sound and Music Computing students with high auditory engagement and stimulation-seeking tendencies.
+
+\subsection{Behavioral Indicators by Sensory Profile}
+
+Table \ref{tab:behavioral_summary} presents aggregated behavioral metrics for each sensory profile group.
+
+\begin{table}[htbp]
+\centering
+\caption{Behavioral Metrics by Sensory Profile}
+\label{tab:behavioral_summary}
+\begin{tabular}{lccc}
+\hline
+\textbf{Metric} & \textbf{Hyper} & \textbf{Typical} & \textbf{Hypo} \\
+\hline
+Avg Volume (\%) & 51.6 & 54.2 & 59.3 \\
+Mute Events & 4 & 5.9 & 8.1 \\
+Total Adjustments & 249 & 516 & 340 \\
+Session Duration (min) & 7.4 & 16.1 & 16.6 \\
+Adjustments/min & 33.6 & 32.0 & 20.5 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{FORCE Technology Sound Wheel Mapping}
+
+The classification framework was mapped to the FORCE Technology Sound Wheel attributes to provide a standardized perceptual vocabulary for each sensory profile. Table \ref{tab:sound_wheel} summarizes the recommended audio characteristics for each group.
+
+\begin{table}[htbp]
+\centering
+\caption{Sound Wheel Attribute Mapping by Sensory Profile}
+\label{tab:sound_wheel}
+\small
+\begin{tabular}{lccc}
+\hline
+\textbf{Attribute} & \textbf{Hypersensitive} & \textbf{Typical} & \textbf{Hyposensitive} \\
+\hline
+\multicolumn{4}{l}{\textit{Loudness Category}} \\
+Loudness & Soft (30--40 dB) & Medium (50--60 dB) & Loud (65--75+ dB) \\
+\hline
+\multicolumn{4}{l}{\textit{Dynamics Category}} \\
+Attack & Imprecise/Smoothed & Moderate & Precise \\
+Bass Precision & Moderate & Moderate & Precise \\
+Punch & Weak & Moderate & Strong \\
+Powerful & Reduced & Maintained & Maintained \\
+\hline
+\multicolumn{4}{l}{\textit{Timbre Category}} \\
+Treble Strength & A little & Neutral & A lot \\
+Brilliance & Low & Moderate & High \\
+Tinny & A little & Neutral & A lot \\
+Midrange Strength & A little & Neutral & A lot \\
+Bass Strength & Neutral & Neutral & A lot \\
+Bass Depth & A little & Neutral & A lot \\
+Timbral Balance & Dark/Warm & Neutral & Bright \\
+Full & Low degree & Moderate & High degree \\
+Homogeneous & Coherent & Coherent & Coherent \\
+\hline
+\multicolumn{4}{l}{\textit{Spatial Category}} \\
+Depth & Shallow & Moderate & Deep \\
+Width & Small & Moderate & Large \\
+Envelopment & Small & Moderate & Large \\
+Spatial Balance & Symmetric & Symmetric & Symmetric \\
+Distance & Distant & Indistinct & Near \\
+Localisability & Imprecise & Moderate & Precise \\
+Reverberance & Dry & Moderate & Wet \\
+Clarity & Clear (filtered) & Clear & Clear \\
+\hline
+\multicolumn{4}{l}{\textit{Transparency}} \\
+Presence & A little & Moderate & A lot \\
+Clean & Distinct & Distinct & Distinct \\
+Detail & Simple & Moderate & Rich \\
+Natural & A lot & A lot & Neutral \\
+\hline
+\multicolumn{4}{l}{\textit{Artefacts Category}} \\
+Distortion & A little & A little & Moderate \\
+Compression & A lot & Neutral & A little \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Key Findings}
+
+\begin{enumerate}
+    \item \textbf{Volume Preferences}: Hypersensitive users maintained lower average volumes (51.6\%) compared to hyposensitive users (59.3\%), consistent with established literature on auditory hypersensitivity thresholds \cite{kanakri2017noise}.
+
+    \item \textbf{Muting Behavior}: Hyposensitive participants exhibited higher muting frequency (8.1 events) despite preferring louder volumes, suggesting a pattern of sensory seeking followed by regulation---characteristic of sensory modulation fluctuations.
+
+    \item \textbf{Adjustment Frequency}: Hypersensitive participants showed higher adjustment rates per minute (33.6), indicating active sensory regulation behavior, while hyposensitive participants demonstrated lower rates (20.5), suggesting satisfaction with more intense stimulation levels once achieved.
+
+    \item \textbf{Questionnaire-Behavior Alignment}: Participants who selected ``warm/soft'' sound textures (Option 1) showed 67\% correspondence with hypersensitive classification, while those selecting ``bright/sharp'' (Option 3) aligned 73\% with hyposensitive profiles.
+
+    \item \textbf{Reverb and Delay Preferences}: 91\% of hyposensitive participants selected rich reverb (Option 3), compared to 0\% of hypersensitive participants, validating the theoretical framework that hyposensitive users seek enhanced spatial audio for engagement.
+\end{enumerate}
+
+\subsection{Sound Wheel Implementation Recommendations}
+
+Based on the mapping results, the following audio processing recommendations emerge for adaptive VR systems:
+
+\textbf{For Hypersensitive Users:}
+\begin{itemize}
+    \item Apply low-pass filtering to reduce treble strength (cutoff: 4--6 kHz)
+    \item Minimize reverb decay time ($<$ 0.3s)
+    \item Apply dynamic compression to limit sudden volume spikes
+    \item Favor warm timbral balance with reduced high-frequency content
+    \item Maintain shallow spatial depth to reduce auditory complexity
+\end{itemize}
+
+\textbf{For Hyposensitive Users:}
+\begin{itemize}
+    \item Enhance treble and brilliance through parametric EQ boost
+    \item Increase reverb decay time (1.0--2.0s) for spatial richness
+    \item Enable full dynamic range without compression
+    \item Favor bright timbral balance with emphasized high-frequency detail
+    \item Maximize spatial depth and envelopment for immersive engagement
+\end{itemize}
+
+\textbf{For Typical Users:}
+\begin{itemize}
+    \item Apply neutral timbral balance
+    \item Moderate reverb settings (decay: 0.5--1.0s)
+    \item Balanced loudness at comfortable listening levels (50--60 dB SPL)
+    \item Maintain natural sound reproduction without heavy processing
+\end{itemize}
+
+These mappings provide a scientifically grounded basis for real-time adaptive audio in VR environments, enabling personalized sensory experiences that align with individual neuroperceptual profiles.

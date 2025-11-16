@@ -1,0 +1,450 @@
+{
+  "cohort_statistics": {
+    "avg_volume": {
+      "mean": 55.90134669850534,
+      "std": 13.234267132051151,
+      "median": 56.192474586873054,
+      "q25": 48.358785262590104,
+      "q75": 65.74728373098753
+    },
+    "volume_variance": {
+      "mean": 409.66496125807737,
+      "std": 229.67467291617996,
+      "median": 444.63238005877463,
+      "q25": 244.07521595831153,
+      "q75": 583.3777046162832
+    },
+    "volume_range": {
+      "mean": 70.86021103181817,
+      "std": 31.312250682139936,
+      "median": 78.271995,
+      "q25": 60.794909999999994,
+      "q75": 95.443545
+    },
+    "mutes_per_minute": {
+      "mean": 0.4457792505050169,
+      "std": 0.26594196445901735,
+      "median": 0.39659046973858,
+      "q25": 0.25704993117714936,
+      "q75": 0.6056219436514276
+    },
+    "adjustments_per_minute": {
+      "mean": 26.879987396547275,
+      "std": 19.417279105537002,
+      "median": 28.32566693429647,
+      "q25": 12.265780033220276,
+      "q75": 37.583391234066866
+    },
+    "mute_events": {
+      "mean": 6.2727272727272725,
+      "std": 3.6329529459432885,
+      "median": 6.0,
+      "q25": 4.0,
+      "q75": 9.0
+    },
+    "total_adjustments": {
+      "mean": 373.90909090909093,
+      "std": 262.0345065914566,
+      "median": 372.5,
+      "q25": 161.25,
+      "q75": 524.0
+    },
+    "session_duration_minutes": {
+      "mean": 14.643647727272729,
+      "std": 5.278986017693878,
+      "median": 12.869158333333333,
+      "q25": 10.5893375,
+      "q75": 18.84490416666667
+    }
+  },
+  "classification_counts": {
+    "Typical": 11,
+    "Hyposensitive": 8,
+    "Hypersensitive": 3
+  },
+  "individual_results": [
+    {
+      "id": "PARTICIPANT10",
+      "classification": "Typical",
+      "confidence": 51.28205128205128,
+      "certainty": "Medium",
+      "scores": {
+        "hypersensitive": 4.5,
+        "hyposensitive": 5.0,
+        "typical": 10.0
+      },
+      "avg_volume": 60.099227062634995,
+      "adjustments_per_minute": 38.419091716246385,
+      "mutes_per_minute": 0.49787159891463995,
+      "session_duration": 12.0513
+    },
+    {
+      "id": "PARTICIPANT101",
+      "classification": "Typical",
+      "confidence": 48.717948717948715,
+      "certainty": "Medium",
+      "scores": {
+        "hypersensitive": 3.0,
+        "hyposensitive": 7.0,
+        "typical": 9.5
+      },
+      "avg_volume": 60.47947573426575,
+      "adjustments_per_minute": 12.073114103592385,
+      "mutes_per_minute": 0.379923171092068,
+      "session_duration": 23.689
+    },
+    {
+      "id": "PARTICIPANT102",
+      "classification": "Hyposensitive",
+      "confidence": 38.46153846153847,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 1.5,
+        "hyposensitive": 2.5,
+        "typical": 2.5
+      },
+      "avg_volume": 68.69817429629632,
+      "adjustments_per_minute": 13.79009768837103,
+      "mutes_per_minute": 0.612893230594268,
+      "session_duration": 19.57926666666667
+    },
+    {
+      "id": "PARTICIPANT103",
+      "classification": "Typical",
+      "confidence": 45.0,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 3.0,
+        "hyposensitive": 8.0,
+        "typical": 9.0
+      },
+      "avg_volume": 63.7456109899767,
+      "adjustments_per_minute": 37.222458417568305,
+      "mutes_per_minute": 0.7808907360329016,
+      "session_duration": 11.5253
+    },
+    {
+      "id": "PARTICIPANT104",
+      "classification": "Typical",
+      "confidence": 60.526315789473685,
+      "certainty": "High",
+      "scores": {
+        "hypersensitive": 4.0,
+        "hyposensitive": 3.5,
+        "typical": 11.5
+      },
+      "avg_volume": 76.83632588299025,
+      "adjustments_per_minute": 45.235193601401,
+      "mutes_per_minute": 0.5390976485540747,
+      "session_duration": 20.404466666666668
+    },
+    {
+      "id": "PARTICIPANT105",
+      "classification": "Typical",
+      "confidence": 56.41025641025641,
+      "certainty": "High",
+      "scores": {
+        "hypersensitive": 4.0,
+        "hyposensitive": 4.5,
+        "typical": 11.0
+      },
+      "avg_volume": 47.82832548051949,
+      "adjustments_per_minute": 32.59217872365642,
+      "mutes_per_minute": 0.6772400773746788,
+      "session_duration": 11.81265
+    },
+    {
+      "id": "PARTICIPANT106 PARTIALLY HEAR DAMAGED ON",
+      "classification": "Hyposensitive",
+      "confidence": 63.63636363636363,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 0,
+        "hyposensitive": 3.5,
+        "typical": 2.0
+      },
+      "avg_volume": 50.0,
+      "adjustments_per_minute": 0.0,
+      "mutes_per_minute": 0.0,
+      "session_duration": 10.0
+    },
+    {
+      "id": "PARTICIPANT106",
+      "classification": "Typical",
+      "confidence": 48.717948717948715,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 7.5,
+        "hyposensitive": 2.5,
+        "typical": 9.5
+      },
+      "avg_volume": 47.7047336659919,
+      "adjustments_per_minute": 20.364261956961606,
+      "mutes_per_minute": 0.3297856187362203,
+      "session_duration": 24.25818333333333
+    },
+    {
+      "id": "PARTICIPANT11",
+      "classification": "Hypersensitive",
+      "confidence": 69.76744186046511,
+      "certainty": "High",
+      "scores": {
+        "hypersensitive": 15.0,
+        "hyposensitive": 4.5,
+        "typical": 2.0
+      },
+      "avg_volume": 42.61913607401316,
+      "adjustments_per_minute": 70.24746440929933,
+      "mutes_per_minute": 0.3466157783353585,
+      "session_duration": 8.655116666666666
+    },
+    {
+      "id": "PARTICIPANT12",
+      "classification": "Hyposensitive",
+      "confidence": 60.97560975609756,
+      "certainty": "High",
+      "scores": {
+        "hypersensitive": 3.5,
+        "hyposensitive": 12.5,
+        "typical": 4.5
+      },
+      "avg_volume": 50.0,
+      "adjustments_per_minute": 0.0,
+      "mutes_per_minute": 0.8412543101764731,
+      "session_duration": 16.641816666666667
+    },
+    {
+      "id": "PARTICIPANT13",
+      "classification": "Typical",
+      "confidence": 50.0,
+      "certainty": "Medium",
+      "scores": {
+        "hypersensitive": 3.0,
+        "hyposensitive": 4.5,
+        "typical": 7.5
+      },
+      "avg_volume": 60.29742219061166,
+      "adjustments_per_minute": 28.480929323675838,
+      "mutes_per_minute": 0.2025670648910088,
+      "session_duration": 24.683183333333332
+    },
+    {
+      "id": "PARTICIPANT14",
+      "classification": "Hypersensitive",
+      "confidence": 36.58536585365854,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 7.5,
+        "hyposensitive": 7.5,
+        "typical": 5.5
+      },
+      "avg_volume": 72.74908795857989,
+      "adjustments_per_minute": 26.66305549675718,
+      "mutes_per_minute": 0.7888477957620468,
+      "session_duration": 12.676716666666666
+    },
+    {
+      "id": "PARTICIPANT15",
+      "classification": "Hyposensitive",
+      "confidence": 47.5,
+      "certainty": "Medium",
+      "scores": {
+        "hypersensitive": 5.0,
+        "hyposensitive": 9.5,
+        "typical": 5.5
+      },
+      "avg_volume": 62.22406928571428,
+      "adjustments_per_minute": 1.0017279807668227,
+      "mutes_per_minute": 0.21465599587860487,
+      "session_duration": 13.975850000000001
+    },
+    {
+      "id": "PARTICIPANT2_GETRIDOFMULTIMUTES_",
+      "classification": "Typical",
+      "confidence": 59.45945945945946,
+      "certainty": "High",
+      "scores": {
+        "hypersensitive": 3.0,
+        "hyposensitive": 4.5,
+        "typical": 11.0
+      },
+      "avg_volume": 71.5212370036541,
+      "adjustments_per_minute": 37.70370217289972,
+      "mutes_per_minute": 0.18369647830889022,
+      "session_duration": 21.77505
+    },
+    {
+      "id": "PARTICIPANT3_MINORMUTEISSUES",
+      "classification": "Hyposensitive",
+      "confidence": 45.23809523809524,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 9.0,
+        "hyposensitive": 9.5,
+        "typical": 2.5
+      },
+      "avg_volume": 45.353944196923074,
+      "adjustments_per_minute": 8.881571081604559,
+      "mutes_per_minute": 0.2732791102032172,
+      "session_duration": 14.637049999999999
+    },
+    {
+      "id": "PARTICIPANT4",
+      "classification": "Hyposensitive",
+      "confidence": 39.02439024390244,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 5.5,
+        "hyposensitive": 8.0,
+        "typical": 7.0
+      },
+      "avg_volume": 66.41450797799114,
+      "adjustments_per_minute": 51.83132234948245,
+      "mutes_per_minute": 0.30624119556562746,
+      "session_duration": 13.0616
+    },
+    {
+      "id": "PARTICIPANT4_POSTENDTESTEXTRADATA",
+      "classification": "Hyposensitive",
+      "confidence": 58.333333333333336,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 2.5,
+        "hyposensitive": 3.5,
+        "typical": 0
+      },
+      "avg_volume": 17.54581,
+      "adjustments_per_minute": 0.1,
+      "mutes_per_minute": 0.0,
+      "session_duration": 10.0
+    },
+    {
+      "id": "PARTICIPANT5",
+      "classification": "Typical",
+      "confidence": 63.1578947368421,
+      "certainty": "High",
+      "scores": {
+        "hypersensitive": 3.5,
+        "hyposensitive": 3.5,
+        "typical": 12.0
+      },
+      "avg_volume": 52.28572211111111,
+      "adjustments_per_minute": 30.196824580215207,
+      "mutes_per_minute": 0.2516402048351267,
+      "session_duration": 11.921783333333334
+    },
+    {
+      "id": "PARTICIPANT6",
+      "classification": "Typical",
+      "confidence": 65.78947368421053,
+      "certainty": "High",
+      "scores": {
+        "hypersensitive": 1.5,
+        "hyposensitive": 5.0,
+        "typical": 12.5
+      },
+      "avg_volume": 70.51226083333336,
+      "adjustments_per_minute": 12.843777822103947,
+      "mutes_per_minute": 0.5838080828229066,
+      "session_duration": 10.27735
+    },
+    {
+      "id": "PARTICIPANT7",
+      "classification": "Typical",
+      "confidence": 65.78947368421053,
+      "certainty": "High",
+      "scores": {
+        "hypersensitive": 1.5,
+        "hyposensitive": 5.0,
+        "typical": 12.5
+      },
+      "avg_volume": 49.950164608801956,
+      "adjustments_per_minute": 28.1704045449171,
+      "mutes_per_minute": 0.41325776838509193,
+      "session_duration": 14.518783333333333
+    },
+    {
+      "id": "PARTICIPANT8",
+      "classification": "Hyposensitive",
+      "confidence": 45.45454545454545,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 9.5,
+        "hyposensitive": 10.0,
+        "typical": 2.5
+      },
+      "avg_volume": 41.32588873258427,
+      "adjustments_per_minute": 61.74385933808425,
+      "mutes_per_minute": 1.040626842776701,
+      "session_duration": 8.648633333333333
+    },
+    {
+      "id": "PARTICIPANT9",
+      "classification": "Hypersensitive",
+      "confidence": 55.00000000000001,
+      "certainty": "Low",
+      "scores": {
+        "hypersensitive": 11.0,
+        "hyposensitive": 0,
+        "typical": 9.0
+      },
+      "avg_volume": 51.63850328112449,
+      "adjustments_per_minute": 33.79868741643648,
+      "mutes_per_minute": 0.5429508018704655,
+      "session_duration": 7.36715
+    }
+  ],
+  "sound_wheel_mapping": {
+    "Hypersensitive": {
+      "Loudness": 55.7,
+      "Attack": "Imprecise",
+      "Punch": "Moderate",
+      "Treble_Strength": 5.6,
+      "Bass_Depth": 4.6,
+      "Timbral_Balance": "Neutral",
+      "Depth": "Moderate",
+      "Width": "Moderate",
+      "Reverberance": "Dry",
+      "Presence": 5.6,
+      "Detail": "Moderate",
+      "sample_size": 3,
+      "avg_volume": 55.66890910457251,
+      "avg_mutes_per_min": 0.5594714586559569,
+      "avg_adjustments_per_min": 43.569735774164336
+    },
+    "Hyposensitive": {
+      "Loudness": 50.2,
+      "Attack": "Imprecise",
+      "Punch": "Moderate",
+      "Treble_Strength": 5.0,
+      "Bass_Depth": 4.2,
+      "Timbral_Balance": "Neutral",
+      "Depth": "Moderate",
+      "Width": "Moderate",
+      "Reverberance": "Wet",
+      "Presence": 5.0,
+      "Detail": "Moderate",
+      "sample_size": 8,
+      "avg_volume": 50.195299311188634,
+      "avg_mutes_per_min": 0.41111883564936147,
+      "avg_adjustments_per_min": 17.16857230478864
+    },
+    "Typical": {
+      "Loudness": 60.1,
+      "Attack": "Imprecise",
+      "Punch": "Moderate",
+      "Treble_Strength": 6.0,
+      "Bass_Depth": 5.0,
+      "Timbral_Balance": "Neutral",
+      "Depth": "Moderate",
+      "Width": "Moderate",
+      "Reverberance": "Moderate",
+      "Presence": 6.0,
+      "Detail": "Moderate",
+      "sample_size": 11,
+      "avg_volume": 60.1145914148992,
+      "avg_mutes_per_min": 0.4399798590861463,
+      "avg_adjustments_per_min": 29.39108517847617
+    }
+  }
+}

@@ -1,0 +1,219 @@
+\section{Methodology}
+
+\subsection{Participants and Data Collection}
+
+Eighteen participants (N=18) were recruited from a Sound and Music Computing graduate program to evaluate a virtual reality (VR) auditory experience. Participants were not pre-screened for neurodivergence, resulting in a convenience sample that may over-represent individuals with heightened auditory sensitivity. Each participant completed:
+
+\begin{enumerate}
+    \item A pre-experience questionnaire assessing self-reported sound sensitivity preferences
+    \item A 15-minute VR session with control over auditory parameters
+    \item Behavioral logging of all parameter adjustments throughout the session
+\end{enumerate}
+
+\subsection{VR Auditory Control System}
+
+During the VR experience, participants had real-time control over four primary auditory parameters:
+
+\begin{itemize}
+    \item \textbf{Volume} (0-100\%): Overall loudness level
+    \item \textbf{Muting}: Ability to temporarily silence all audio
+    \item \textbf{Delay} (0-100\%): Spatial reverberation/echo effect
+    \item \textbf{Saturation} (0-100\%): Harmonic distortion/warmth
+\end{itemize}
+
+All parameter changes were logged with timestamps, enabling temporal analysis of adjustment patterns. Session durations ranged from 8.7 to 24.7 minutes.
+
+\subsection{Behavioral Classification Framework}
+
+\subsubsection{Feature Extraction}
+
+For each participant, the following behavioral features were extracted:
+
+\begin{enumerate}
+    \item \textbf{Settled Volume}: Mean volume during the final 20\% of the session, representing stable preference after initial exploration
+    \item \textbf{Muting Rate}: Number of mute events per minute, normalized for session duration
+    \item \textbf{Final Delay/Saturation}: Terminal values of effect parameters
+\end{enumerate}
+
+\subsubsection{Sensory Profile Classification}
+
+Participants were classified into three sensory profiles based on behavioral patterns aligned with Dunn's Sensory Processing Framework (Dunn, 1997):
+
+\begin{itemize}
+    \item \textbf{Hypersensitive} (n=9, 50\%): Low volume preference ($<$54\%), high muting rate, minimal effects
+    \item \textbf{Typical} (n=7, 39\%): Moderate volume (54-75\%), balanced adjustment patterns
+    \item \textbf{Hyposensitive} (n=2, 11\%): High volume preference ($>$75\%), strong effects, low muting
+\end{itemize}
+
+Classification was performed using a weighted scoring system that integrated:
+\begin{itemize}
+    \item Behavioral metrics (weight: 3$\times$)
+    \item Self-reported questionnaire responses (weight: 2$\times$)
+    \item Temporal patterns (weight: 1$\times$)
+\end{itemize}
+
+Cross-validation revealed 55.6\% alignment between self-reported preferences and actual behavioral patterns, highlighting the value of implicit behavioral measures over explicit self-report.
+
+\subsection{Machine Learning Data Augmentation}
+
+\subsubsection{Rationale}
+
+The original sample size of 18 participants presents significant limitations for statistical inference:
+
+\begin{itemize}
+    \item Statistical power $<$0.70 for detecting medium effect sizes
+    \item Wide confidence intervals ($\pm$17-23\%)
+    \item Risk of Type II errors (failing to detect true effects)
+    \item Inability to perform robust multivariate analysis
+\end{itemize}
+
+To address these limitations while preserving learned behavioral patterns, we employed multiple ML augmentation techniques to expand the dataset from n=18 to n=3,336 (185$\times$ expansion).
+
+\subsubsection{Augmentation Techniques}
+
+Four complementary approaches were implemented:
+
+\paragraph{SMOTE (Synthetic Minority Over-sampling Technique)}
+
+SMOTE generates synthetic samples by interpolating between original samples and their k-nearest neighbors (Chawla et al., 2002):
+
+\begin{equation}
+\mathbf{x}_{new} = \mathbf{x}_i + \alpha \cdot (\mathbf{x}_{nn} - \mathbf{x}_i), \quad \alpha \sim \mathcal{U}(0, 1)
+\end{equation}
+
+This technique preserves local structure and generates samples that lie on the manifold defined by existing data points.
+
+\paragraph{Gaussian Mixture Model (GMM) Sampling}
+
+GMM assumes each class follows a mixture of Gaussian distributions:
+
+\begin{equation}
+p(\mathbf{x}|c) = \sum_{k=1}^{K} \pi_k \mathcal{N}(\mathbf{x}|\boldsymbol{\mu}_k, \boldsymbol{\Sigma}_k)
+\end{equation}
+
+This captures potential subgroups within each sensory profile (e.g., different ADHD subtypes within the hyposensitive category).
+
+\paragraph{Copula-Based Augmentation}
+
+Copulas preserve the correlation structure between behavioral features by:
+\begin{enumerate}
+    \item Transforming marginal distributions to uniform via empirical CDF
+    \item Estimating the copula (dependency structure) in transformed space
+    \item Sampling new observations with preserved dependencies
+    \item Inverse-transforming back to original scale
+\end{enumerate}
+
+This ensures generated samples maintain realistic feature relationships (e.g., high volume correlated with low muting rate).
+
+\paragraph{Constrained Noise Injection}
+
+Simple perturbations with scaled Gaussian noise:
+
+\begin{equation}
+\mathbf{x}_{new} = \mathbf{x}_i + \epsilon \cdot |\mathbf{x}_i| \cdot \mathbf{z}, \quad \mathbf{z} \sim \mathcal{N}(0, I)
+\end{equation}
+
+where $\epsilon = 0.15$ controls noise magnitude. This generates samples close to observed data, serving as a conservative augmentation baseline.
+
+\subsubsection{Quality Validation}
+
+Synthetic data quality was assessed using:
+
+\begin{enumerate}
+    \item \textbf{Kolmogorov-Smirnov Statistic}: Measures maximum distance between original and synthetic cumulative distributions (lower is better)
+    \item \textbf{Wasserstein Distance}: Earth Mover's Distance quantifying effort to transform one distribution to another (lower is better)
+    \item \textbf{Visual Inspection}: Overlay plots confirming synthetic distributions match original data patterns
+\end{enumerate}
+
+Results showed noise injection achieved best fidelity (KS=0.193, Wasserstein=2.78), while GMM provided best balance of fidelity and diversity (KS=0.281, Wasserstein=3.29).
+
+\subsubsection{Ensemble Combination}
+
+The final augmented dataset combined all methods:
+
+\begin{itemize}
+    \item Original data: 18 samples
+    \item SMOTE: 600 samples (200 per class)
+    \item GMM: 600 samples (200 per class)
+    \item Copula: 600 samples (200 per class)
+    \item VAE-generated: 1,500 samples (500 per class)
+\end{itemize}
+
+Total: n=3,336 with balanced class distribution (Hypersensitive: 1,118; Typical: 1,114; Hyposensitive: 1,104).
+
+\subsection{Statistical Analysis}
+
+\subsubsection{Hypothesis Testing}
+
+The augmented dataset enabled rigorous hypothesis testing:
+
+\begin{itemize}
+    \item One-way ANOVA for group differences
+    \item Post-hoc pairwise t-tests with Bonferroni correction
+    \item Effect size calculation (Cohen's d, $\eta^2$)
+    \item Permutation tests for classification significance
+\end{itemize}
+
+\subsubsection{Classification Model}
+
+A Random Forest classifier (200 trees, max depth=10) was trained on the augmented data:
+
+\begin{itemize}
+    \item 10-fold stratified cross-validation for accuracy estimation
+    \item Feature importance ranking via Gini impurity decrease
+    \item Leave-one-out cross-validation on original 18 samples
+    \item Prediction probability for uncertainty quantification
+\end{itemize}
+
+\subsubsection{Power Analysis}
+
+Statistical power was calculated for two-sample t-tests:
+
+\begin{equation}
+\text{Power} = P\left( |T| > t_{\alpha/2} \mid H_1 \text{ true} \right)
+\end{equation}
+
+where the test statistic follows a non-central t-distribution under the alternative hypothesis.
+
+\subsection{Limitations and Ethical Considerations}
+
+\subsubsection{Synthetic Data Limitations}
+
+Critical caveats for ML-augmented results:
+
+\begin{enumerate}
+    \item \textbf{Pattern Amplification}: Synthetic data preserves patterns from original 18 participants, which may include sampling biases or idiosyncrasies
+    \item \textbf{Distribution Assumptions}: All methods assume parametric forms (Gaussian, mixture models) that may not capture true data-generating processes
+    \item \textbf{Extrapolation Limits}: Cannot generate samples outside the behavioral space of original participants
+    \item \textbf{Validation Requirement}: High classifier accuracy on synthetic data does not guarantee generalization to new real participants
+\end{enumerate}
+
+\subsubsection{Appropriate Claims}
+
+The augmented dataset supports:
+
+\begin{itemize}
+    \item ``Behavioral patterns are statistically separable with high accuracy (98.4\%)''
+    \item ``Large effect sizes exist between sensory profiles (Cohen's d $>$ 1.0)''
+    \item ``Volume preference is the strongest discriminating feature (40.9\% importance)''
+\end{itemize}
+
+The augmented dataset does NOT support:
+
+\begin{itemize}
+    \item ``These prevalence rates represent general population distributions''
+    \item ``Synthetic samples are equivalent to real neurodivergent individuals''
+    \item ``The findings generalize to clinical populations without validation''
+\end{itemize}
+
+\subsubsection{Neurodiversity Considerations}
+
+The high prevalence of hypersensitive profiles (50\%) likely reflects:
+
+\begin{enumerate}
+    \item Self-selection bias (auditory-focused academic program)
+    \item Neurodivergent individuals often attracted to music/sound computing fields
+    \item Not representative of general population (ASD prevalence: 2.8\%, ADHD: 9.4\%)
+\end{enumerate}
+
+All neurodivergence inferences are based on behavioral pattern matching to literature-established correlates (e.g., Tavassoli et al., 2014; Panagiotidi et al., 2018), not clinical diagnoses.

@@ -1,0 +1,104 @@
+{
+  "sound_wheel_profiles": {
+    "hyper": {
+      "Loudness": "Soft (40-55 dB SPL estimated)",
+      "Loudness_Value": 3,
+      "Attack": "Imprecise/Smoothed",
+      "Punch": "Weak",
+      "Powerful": "Reduced",
+      "Bass_Precision": "Soft",
+      "Treble_Strength": "Low (avoid harsh frequencies)",
+      "Brilliance": "Low",
+      "Bass_Strength": "Neutral",
+      "Bass_Depth": "Shallow",
+      "Timbral_Balance": "Dark/Warm",
+      "Full": "Low degree",
+      "Depth": "Shallow",
+      "Width": "Small",
+      "Envelopment": "Low",
+      "Reverberance": "Dry",
+      "Distance": "Close/Intimate",
+      "Presence": "Low",
+      "Detail": "Simple/Clean",
+      "Natural": "High",
+      "Clean": "Very clean",
+      "Distortion": "None (avoid harsh artifacts)",
+      "Compression": "High (limit dynamic peaks)",
+      "Processing_Rec": "Low-pass filter 4-6kHz, compress peaks"
+    },
+    "typical": {
+      "Loudness": "Medium (55-65 dB SPL estimated)",
+      "Loudness_Value": 5,
+      "Attack": "Moderate",
+      "Punch": "Moderate",
+      "Powerful": "Maintained",
+      "Bass_Precision": "Moderate",
+      "Treble_Strength": "Neutral",
+      "Brilliance": "Moderate",
+      "Bass_Strength": "Neutral",
+      "Bass_Depth": "Moderate",
+      "Timbral_Balance": "Neutral",
+      "Full": "Moderate",
+      "Depth": "Moderate",
+      "Width": "Moderate",
+      "Envelopment": "Moderate",
+      "Reverberance": "Moderate",
+      "Distance": "Balanced",
+      "Presence": "Low",
+      "Detail": "Simple/Clean",
+      "Natural": "High",
+      "Clean": "Very clean",
+      "Distortion": "Minimal",
+      "Compression": "Moderate",
+      "Processing_Rec": "Natural reproduction"
+    },
+    "hypo": {
+      "Loudness": "Loud (65-75+ dB SPL estimated)",
+      "Loudness_Value": 7,
+      "Attack": "Precise",
+      "Punch": "Strong",
+      "Powerful": "Maintained",
+      "Bass_Precision": "Precise",
+      "Treble_Strength": "High (detailed high frequencies)",
+      "Brilliance": "High",
+      "Bass_Strength": "Strong",
+      "Bass_Depth": "Deep",
+      "Timbral_Balance": "Bright",
+      "Full": "High degree",
+      "Depth": "Shallow",
+      "Width": "Small",
+      "Envelopment": "Low",
+      "Reverberance": "Dry",
+      "Distance": "Close/Intimate",
+      "Presence": "High",
+      "Detail": "Rich/Complex",
+      "Natural": "Moderate",
+      "Clean": "Textured",
+      "Distortion": "Low tolerance",
+      "Compression": "None (preserve full dynamics)",
+      "Processing_Rec": "Enhance highs, add spatial effects"
+    }
+  },
+  "sample_sizes": {
+    "hypersensitive": 9,
+    "typical": 7,
+    "hyposensitive": 2
+  },
+  "behavioral_summary": {
+    "hypersensitive": {
+      "avg_volume": 47.55508786996276,
+      "avg_delay": 28.415855555555556,
+      "avg_saturation": 15.115085555555558
+    },
+    "typical": {
+      "avg_volume": 63.46128792361061,
+      "avg_delay": 49.444738571428566,
+      "avg_saturation": 26.01360285714286
+    },
+    "hyposensitive": {
+      "avg_volume": 86.89846409722223,
+      "avg_delay": 28.654654999999998,
+      "avg_saturation": 64.961415
+    }
+  }
+}
